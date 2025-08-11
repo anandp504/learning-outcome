@@ -24,7 +24,7 @@ class Settings(BaseSettings):
     # LLM Settings
     # Ollama (Local)
     ollama_base_url: str = "http://localhost:11434"
-    ollama_model: str = "llama3.2"
+    ollama_model: str = "llama3.2:3b"
     
     # OpenAI (Fallback)
     openai_api_key: Optional[str] = None
