@@ -564,6 +564,73 @@ class GraphRAGService:
             "initialized": self._initialized
         }
     
+    def get_learning_path(self, current_concept_id: str, max_depth: int = 5) -> Dict[str, Any]:
+        """Get the complete learning path from current concept to all reachable concepts."""
+        try:
+            if not self._initialized:
+                raise RuntimeError("GraphRAG service not initialized")
+            
+            if current_concept_id not in self.graph:
+                raise ValueError(f"Concept {current_concept_id} not found in knowledge graph")
+            
+            # Get all reachable concepts using BFS
+            visited = set()
+            queue = [(current_concept_id, 0)]  # (concept_id, depth)
+            learning_path = {
+                "current_concept": current_concept_id,
+                "total_concepts": 0,
+                "estimated_total_hours": 0.0,
+                "path_levels": [],
+                "concept_details": {}
+            }
+            
+            while queue:
+                concept_id, depth = queue.pop(0)
+                
+                if concept_id in visited or depth > max_depth:
+                    continue
+                
+                visited.add(concept_id)
+                
+                # Get concept data
+                concept_data = self.concepts_cache.get(concept_id, {})
+                if not concept_data:
+                    continue
+                
+                # Add to learning path
+                if depth >= len(learning_path["path_levels"]):
+                    learning_path["path_levels"].append([])
+                
+                learning_path["path_levels"][depth].append(concept_id)
+                learning_path["concept_details"][concept_id] = {
+                    "name": concept_data.get("name", ""),
+                    "description": concept_data.get("description", ""),
+                    "difficulty": concept_data.get("difficulty", 3),
+                    "estimated_hours": concept_data.get("estimated_hours", 2.0),
+                    "concept_type": concept_data.get("concept_type", ""),
+                    "prerequisites": list(self.graph.predecessors(concept_id)),
+                    "next_concepts": list(self.graph.successors(concept_id)),
+                    "depth": depth
+                }
+                
+                learning_path["total_concepts"] += 1
+                learning_path["estimated_total_hours"] += concept_data.get("estimated_hours", 2.0)
+                
+                # Add next concepts to queue
+                for next_concept in self.graph.successors(concept_id):
+                    if next_concept not in visited:
+                        queue.append((next_concept, depth + 1))
+            
+            # Sort concepts within each level by difficulty
+            for level in learning_path["path_levels"]:
+                level.sort(key=lambda x: learning_path["concept_details"][x]["difficulty"])
+            
+            return learning_path
+            
+        except Exception as e:
+            logger.error(f"Error getting learning path: {e}")
+            raise
+    
     async def cleanup(self):
         """Clean up resources."""
         try:

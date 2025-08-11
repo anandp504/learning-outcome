@@ -6,7 +6,8 @@ from fastapi import FastAPI, HTTPException, Depends, status
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 import uvicorn
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
+from datetime import datetime
 
 from app.config import settings
 from app.services.graphrag import graphrag_service
@@ -24,6 +25,11 @@ class RecommendationRequest(BaseModel):
     current_concept: str
     performance_score: float
     limit: int = 5
+
+class PerformanceAnalysisRequest(BaseModel):
+    student_data: dict = Field(..., description="Student profile and background information")
+    concept_data: dict = Field(..., description="Concept being analyzed")
+    performance_metrics: dict = Field(..., description="Performance data and metrics")
 
 # Configure logging
 logging.basicConfig(
@@ -200,6 +206,38 @@ async def get_prerequisites(concept_id: str):
         )
 
 
+@app.get("/concepts/{concept_id}/learning-path")
+async def get_learning_path(concept_id: str, max_depth: int = 5):
+    """Get the complete learning path from current concept to all reachable concepts."""
+    try:
+        if max_depth < 1 or max_depth > 10:
+            raise HTTPException(
+                status_code=status.HTTP_400_BAD_REQUEST,
+                detail="max_depth must be between 1 and 10"
+            )
+        
+        learning_path = graphrag_service.get_learning_path(concept_id, max_depth)
+        
+        return learning_path
+        
+    except ValueError as e:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=str(e)
+        )
+    except RuntimeError as e:
+        raise HTTPException(
+            status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
+            detail=str(e)
+        )
+    except Exception as e:
+        logger.error(f"Error getting learning path: {e}")
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail="Internal server error"
+        )
+
+
 @app.post("/search")
 async def search_concepts(request: SearchRequest):
     """Search for concepts using GraphRAG."""
@@ -260,19 +298,18 @@ async def get_recommendations(request: RecommendationRequest):
 
 
 @app.post("/analyze-performance")
-async def analyze_performance(student_data: dict, concept_data: dict, 
-                            performance_metrics: dict):
+async def analyze_performance(request: PerformanceAnalysisRequest):
     """Analyze student performance using LLM."""
     try:
         analysis = await llm_service.analyze_student_performance(
-            student_data, concept_data, performance_metrics
+            request.student_data, request.concept_data, request.performance_metrics
         )
         
         return {
             "analysis": analysis,
-            "student_id": student_data.get("student_id"),
-            "concept_id": concept_data.get("concept_id"),
-            "timestamp": "2024-01-15T10:30:00Z"  # Would be actual timestamp in real app
+            "student_id": request.student_data.get("student_id"),
+            "concept_id": request.concept_data.get("concept_id"),
+            "timestamp": datetime.now().isoformat()
         }
     except Exception as e:
         logger.error(f"Error analyzing performance: {e}")

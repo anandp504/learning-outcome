@@ -421,7 +421,63 @@ Get all prerequisite concepts for a given concept.
 curl "http://localhost:8000/concepts/concept_lcm_basic/prerequisites"
 ```
 
-### 7. Graph Information
+### 7. Learning Path
+
+**GET** `/concepts/{concept_id}/learning-path?max_depth={depth}`
+
+Get the complete learning path from current concept to all reachable concepts.
+
+**Parameters:**
+- `concept_id`: The starting concept identifier
+- `max_depth` (optional): Maximum depth to explore (1-10, default: 5)
+
+```bash
+curl "http://localhost:8000/concepts/concept_lcm_basic/learning-path?max_depth=3"
+```
+
+**Response:**
+```json
+{
+  "current_concept": "concept_lcm_basic",
+  "total_concepts": 8,
+  "estimated_total_hours": 18.5,
+  "path_levels": [
+    ["concept_lcm_basic"],
+    ["concept_lcm_advanced", "concept_fraction_addition"],
+    ["concept_fraction_multiplication", "concept_algebraic_expressions"]
+  ],
+  "concept_details": {
+    "concept_lcm_basic": {
+      "name": "Least Common Multiple (Basic)",
+      "description": "Finding the smallest common multiple of two or more numbers",
+      "difficulty": 2,
+      "estimated_hours": 2.5,
+      "concept_type": "number_theory",
+      "prerequisites": ["concept_multiplication_basic"],
+      "next_concepts": ["concept_lcm_basic", "concept_fraction_addition"],
+      "depth": 0
+    },
+    "concept_lcm_advanced": {
+      "name": "Least Common Multiple (Advanced)",
+      "description": "Advanced LCM techniques and applications",
+      "difficulty": 3,
+      "estimated_hours": 2.5,
+      "concept_type": "number_theory",
+      "prerequisites": ["concept_lcm_basic"],
+      "next_concepts": ["concept_fraction_multiplication"],
+      "depth": 1
+    }
+  }
+}
+```
+
+**Use Cases:**
+- **Learning Roadmap**: Show students their complete learning journey
+- **Progress Planning**: Help teachers plan curriculum and pacing
+- **Goal Setting**: Allow students to see what's ahead and set milestones
+- **Time Estimation**: Provide realistic time expectations for learning goals
+
+### 8. Graph Information
 
 **GET** `/graph-info`
 
@@ -442,7 +498,7 @@ curl http://localhost:8000/graph-info
 }
 ```
 
-### 8. LLM Service Info
+### 9. LLM Service Info
 
 **GET** `/llm-info`
 
@@ -461,6 +517,95 @@ Get information about the embedding service.
 ```bash
 curl http://localhost:8000/embedding-info
 ```
+
+### 10. Performance Analysis
+
+**POST** `/analyze-performance`
+
+Analyze student performance on a specific concept using LLM insights.
+
+```bash
+curl -X POST "http://localhost:8000/analyze-performance" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "student_data": {
+      "student_id": "student_001",
+      "name": "Alex Johnson",
+      "grade_level": 6,
+      "age": 12,
+      "learning_style": "visual",
+      "math_aptitude": "above_average",
+      "interests": ["puzzles", "games", "art"],
+      "goals": ["master fractions", "improve problem solving"]
+    },
+    "concept_data": {
+      "concept_id": "concept_lcm_basic",
+      "name": "Least Common Multiple (Basic)",
+      "description": "Finding the smallest common multiple of two or more numbers",
+      "difficulty": 2,
+      "grade_level": 6,
+      "concept_type": "number_theory"
+    },
+    "performance_metrics": {
+      "performance_score": 0.75,
+      "attempts": 3,
+      "time_spent": 2.5,
+      "strengths": ["understanding prime factors", "listing multiples"],
+      "weaknesses": ["finding LCM of more than 2 numbers", "word problems"],
+      "mastery_level": "developing",
+      "feedback": "Good progress on basic concepts, needs practice with complex scenarios"
+    }
+  }'
+```
+
+**Request Body:**
+```json
+{
+  "student_data": {
+    "student_id": "student_001",
+    "name": "Alex Johnson",
+    "grade_level": 6,
+    "age": 12,
+    "learning_style": "visual",
+    "math_aptitude": "above_average",
+    "interests": ["puzzles", "games", "art"],
+    "goals": ["master fractions", "improve problem solving"]
+  },
+  "concept_data": {
+    "concept_id": "concept_lcm_basic",
+    "name": "Least Common Multiple (Basic)",
+    "description": "Finding the smallest common multiple of two or more numbers",
+    "difficulty": 2,
+    "grade_level": 6,
+    "concept_type": "number_theory"
+  },
+  "performance_metrics": {
+    "performance_score": 0.75,
+    "attempts": 3,
+    "time_spent": 2.5,
+    "strengths": ["understanding prime factors", "listing multiples"],
+    "weaknesses": ["finding LCM of more than 2 numbers", "word problems"],
+    "mastery_level": "developing",
+    "feedback": "Good progress on basic concepts, needs practice with complex scenarios"
+    }
+}
+```
+
+**Response:**
+```json
+{
+  "analysis": "Based on Alex's performance analysis, they show strong foundational understanding of LCM concepts with a 75% performance score. Their strengths in prime factorization and listing multiples indicate solid number theory skills. However, they struggle with complex scenarios involving more than 2 numbers and word problems, suggesting a need for more practice with real-world applications. Given their visual learning style and above-average aptitude, I recommend focusing on visual representations of complex LCM problems and gradually increasing difficulty. Their current mastery level of 'developing' suggests they're ready for intermediate challenges while reinforcing basic concepts.",
+  "student_id": "student_001",
+  "concept_id": "concept_lcm_basic",
+  "timestamp": "2024-01-15T10:30:00Z"
+}
+```
+
+**Use Cases:**
+- **Teacher Assessment**: Get AI-powered insights into student performance
+- **Personalized Feedback**: Generate specific recommendations based on learning patterns
+- **Progress Tracking**: Analyze learning trajectory and identify improvement areas
+- **Intervention Planning**: Determine when additional support is needed
 
 ## 🔧 Configuration
 
