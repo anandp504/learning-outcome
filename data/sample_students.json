@@ -1,0 +1,2265 @@
+{
+  "metadata": {
+    "generated_at": "2025-08-11T07:52:14.495128",
+    "total_students": 15,
+    "total_performance_records": 78,
+    "total_learning_journeys": 15
+  },
+  "students": [
+    {
+      "student_id": "student_001",
+      "name": "Liam Brown",
+      "grade_level": 6,
+      "age": 10,
+      "learning_style": "visual",
+      "math_aptitude": "excellent",
+      "interests": [
+        "robots",
+        "treasure_hunting"
+      ],
+      "goals": [
+        "Build confidence in math",
+        "Learn practical math applications",
+        "Improve problem-solving skills"
+      ],
+      "created_at": "2025-08-11T07:52:14.493687",
+      "updated_at": "2025-08-11T07:52:14.494013"
+    },
+    {
+      "student_id": "student_002",
+      "name": "Evelyn Jones",
+      "grade_level": 6,
+      "age": 11,
+      "learning_style": "visual",
+      "math_aptitude": "excellent",
+      "interests": [
+        "building",
+        "puzzles",
+        "technology"
+      ],
+      "goals": [
+        "Learn practical math applications",
+        "Master basic math operations"
+      ],
+      "created_at": "2025-08-11T07:52:14.494027",
+      "updated_at": "2025-08-11T07:52:14.494029"
+    },
+    {
+      "student_id": "student_003",
+      "name": "Sophia Johnson",
+      "grade_level": 6,
+      "age": 12,
+      "learning_style": "visual",
+      "math_aptitude": "struggling",
+      "interests": [
+        "technology",
+        "music"
+      ],
+      "goals": [
+        "Prepare for algebra",
+        "Develop logical thinking"
+      ],
+      "created_at": "2025-08-11T07:52:14.494036",
+      "updated_at": "2025-08-11T07:52:14.494037"
+    },
+    {
+      "student_id": "student_004",
+      "name": "Charlotte Garcia",
+      "grade_level": 6,
+      "age": 12,
+      "learning_style": "kinesthetic",
+      "math_aptitude": "average",
+      "interests": [
+        "art",
+        "cars",
+        "puzzles",
+        "magic"
+      ],
+      "goals": [
+        "Develop logical thinking",
+        "Build confidence in math",
+        "Improve problem-solving skills"
+      ],
+      "created_at": "2025-08-11T07:52:14.494043",
+      "updated_at": "2025-08-11T07:52:14.494044"
+    },
+    {
+      "student_id": "student_005",
+      "name": "James Rodriguez",
+      "grade_level": 6,
+      "age": 10,
+      "learning_style": "kinesthetic",
+      "math_aptitude": "average",
+      "interests": [
+        "space",
+        "building",
+        "treasure_hunting",
+        "animals"
+      ],
+      "goals": [
+        "Develop logical thinking",
+        "Improve problem-solving skills",
+        "Build confidence in math"
+      ],
+      "created_at": "2025-08-11T07:52:14.494050",
+      "updated_at": "2025-08-11T07:52:14.494051"
+    },
+    {
+      "student_id": "student_006",
+      "name": "Lucas Gonzalez",
+      "grade_level": 6,
+      "age": 10,
+      "learning_style": "kinesthetic",
+      "math_aptitude": "above_average",
+      "interests": [
+        "sports",
+        "robots",
+        "music"
+      ],
+      "goals": [
+        "Improve problem-solving skills",
+        "Build confidence in math",
+        "Prepare for algebra"
+      ],
+      "created_at": "2025-08-11T07:52:14.494056",
+      "updated_at": "2025-08-11T07:52:14.494057"
+    },
+    {
+      "student_id": "student_007",
+      "name": "Emma Garcia",
+      "grade_level": 6,
+      "age": 12,
+      "learning_style": "auditory",
+      "math_aptitude": "struggling",
+      "interests": [
+        "animals",
+        "technology",
+        "space"
+      ],
+      "goals": [
+        "Master basic math operations",
+        "Learn practical math applications",
+        "Improve problem-solving skills"
+      ],
+      "created_at": "2025-08-11T07:52:14.494062",
+      "updated_at": "2025-08-11T07:52:14.494063"
+    },
+    {
+      "student_id": "student_008",
+      "name": "Harper Hernandez",
+      "grade_level": 6,
+      "age": 12,
+      "learning_style": "kinesthetic",
+      "math_aptitude": "excellent",
+      "interests": [
+        "puzzles",
+        "cars",
+        "art"
+      ],
+      "goals": [
+        "Improve problem-solving skills",
+        "Build confidence in math",
+        "Master basic math operations"
+      ],
+      "created_at": "2025-08-11T07:52:14.494069",
+      "updated_at": "2025-08-11T07:52:14.494070"
+    },
+    {
+      "student_id": "student_009",
+      "name": "Sebastian Anderson",
+      "grade_level": 6,
+      "age": 12,
+      "learning_style": "kinesthetic",
+      "math_aptitude": "excellent",
+      "interests": [
+        "magic",
+        "cooking",
+        "robots",
+        "treasure_hunting"
+      ],
+      "goals": [
+        "Build confidence in math",
+        "Learn practical math applications"
+      ],
+      "created_at": "2025-08-11T07:52:14.494075",
+      "updated_at": "2025-08-11T07:52:14.494076"
+    },
+    {
+      "student_id": "student_010",
+      "name": "Ava Gonzalez",
+      "grade_level": 6,
+      "age": 10,
+      "learning_style": "visual",
+      "math_aptitude": "average",
+      "interests": [
+        "cars",
+        "robots",
+        "building",
+        "music"
+      ],
+      "goals": [
+        "Develop logical thinking",
+        "Improve problem-solving skills"
+      ],
+      "created_at": "2025-08-11T07:52:14.494082",
+      "updated_at": "2025-08-11T07:52:14.494083"
+    },
+    {
+      "student_id": "student_011",
+      "name": "Charlotte Garcia",
+      "grade_level": 6,
+      "age": 11,
+      "learning_style": "kinesthetic",
+      "math_aptitude": "excellent",
+      "interests": [
+        "puzzles",
+        "art",
+        "animals"
+      ],
+      "goals": [
+        "Prepare for algebra",
+        "Build confidence in math",
+        "Learn practical math applications"
+      ],
+      "created_at": "2025-08-11T07:52:14.494088",
+      "updated_at": "2025-08-11T07:52:14.494089"
+    },
+    {
+      "student_id": "student_012",
+      "name": "Harper Jones",
+      "grade_level": 6,
+      "age": 11,
+      "learning_style": "kinesthetic",
+      "math_aptitude": "below_average",
+      "interests": [
+        "magic",
+        "animals",
+        "games",
+        "music"
+      ],
+      "goals": [
+        "Learn practical math applications",
+        "Master basic math operations"
+      ],
+      "created_at": "2025-08-11T07:52:14.494094",
+      "updated_at": "2025-08-11T07:52:14.494095"
+    },
+    {
+      "student_id": "student_013",
+      "name": "James Thomas",
+      "grade_level": 6,
+      "age": 10,
+      "learning_style": "kinesthetic",
+      "math_aptitude": "excellent",
+      "interests": [
+        "art",
+        "cars",
+        "building"
+      ],
+      "goals": [
+        "Build confidence in math",
+        "Develop logical thinking"
+      ],
+      "created_at": "2025-08-11T07:52:14.494100",
+      "updated_at": "2025-08-11T07:52:14.494101"
+    },
+    {
+      "student_id": "student_014",
+      "name": "Sophia Rodriguez",
+      "grade_level": 6,
+      "age": 11,
+      "learning_style": "reading_writing",
+      "math_aptitude": "excellent",
+      "interests": [
+        "cars",
+        "sports",
+        "cooking",
+        "building"
+      ],
+      "goals": [
+        "Master basic math operations",
+        "Improve problem-solving skills"
+      ],
+      "created_at": "2025-08-11T07:52:14.494106",
+      "updated_at": "2025-08-11T07:52:14.494107"
+    },
+    {
+      "student_id": "student_015",
+      "name": "Noah Jackson",
+      "grade_level": 6,
+      "age": 10,
+      "learning_style": "reading_writing",
+      "math_aptitude": "excellent",
+      "interests": [
+        "robots",
+        "cooking",
+        "cars"
+      ],
+      "goals": [
+        "Prepare for algebra",
+        "Develop logical thinking"
+      ],
+      "created_at": "2025-08-11T07:52:14.494113",
+      "updated_at": "2025-08-11T07:52:14.494114"
+    }
+  ],
+  "performance_data": [
+    {
+      "student_id": "student_001",
+      "concept_id": "concept_simple_equations",
+      "performance_score": 0.448,
+      "attempts": 2,
+      "time_spent": 10.9,
+      "strengths": [
+        "number_sense"
+      ],
+      "weaknesses": [
+        "multi_step_problems",
+        "word_problems"
+      ],
+      "last_attempt": "2025-07-27T07:52:14.494137",
+      "mastery_level": "beginning",
+      "feedback": "You can do this! Let's break it down into smaller steps."
+    },
+    {
+      "student_id": "student_001",
+      "concept_id": "concept_decimal_operations",
+      "performance_score": 0.452,
+      "attempts": 4,
+      "time_spent": 7.8,
+      "strengths": [
+        "attention_to_detail"
+      ],
+      "weaknesses": [
+        "time_management",
+        "organization"
+      ],
+      "last_attempt": "2025-07-18T07:52:14.494153",
+      "mastery_level": "beginning",
+      "feedback": "You can do this! Let's break it down into smaller steps."
+    },
+    {
+      "student_id": "student_001",
+      "concept_id": "concept_decimal_basics",
+      "performance_score": 0.528,
+      "attempts": 3,
+      "time_spent": 3.14,
+      "strengths": [
+        "estimation",
+        "number_sense"
+      ],
+      "weaknesses": [
+        "organization"
+      ],
+      "last_attempt": "2025-08-08T07:52:14.494160",
+      "mastery_level": "developing",
+      "feedback": "Good effort! Keep practicing to strengthen your understanding."
+    },
+    {
+      "student_id": "student_001",
+      "concept_id": "concept_divisibility_rules",
+      "performance_score": 0.356,
+      "attempts": 3,
+      "time_spent": 6.31,
+      "strengths": [
+        "estimation"
+      ],
+      "weaknesses": [
+        "organization",
+        "time_management"
+      ],
+      "last_attempt": "2025-08-04T07:52:14.494167",
+      "mastery_level": "beginning",
+      "feedback": "Don't give up! Let's work on this together."
+    },
+    {
+      "student_id": "student_002",
+      "concept_id": "concept_volume",
+      "performance_score": 0.477,
+      "attempts": 4,
+      "time_spent": 10.41,
+      "strengths": [
+        "patience"
+      ],
+      "weaknesses": [
+        "test_anxiety",
+        "decimals"
+      ],
+      "last_attempt": "2025-08-05T07:52:14.494177",
+      "mastery_level": "beginning",
+      "feedback": "Keep trying! Math takes practice and patience."
+    },
+    {
+      "student_id": "student_002",
+      "concept_id": "concept_area_perimeter",
+      "performance_score": 0.529,
+      "attempts": 3,
+      "time_spent": 3.77,
+      "strengths": [
+        "attention_to_detail",
+        "problem_solving"
+      ],
+      "weaknesses": [
+        "word_problems"
+      ],
+      "last_attempt": "2025-07-18T07:52:14.494183",
+      "mastery_level": "developing",
+      "feedback": "Nice work! Focus on the areas that need improvement."
+    },
+    {
+      "student_id": "student_002",
+      "concept_id": "concept_decimal_operations",
+      "performance_score": 0.573,
+      "attempts": 2,
+      "time_spent": 5.2,
+      "strengths": [
+        "logical_thinking",
+        "pattern_recognition"
+      ],
+      "weaknesses": [
+        "organization"
+      ],
+      "last_attempt": "2025-08-10T07:52:14.494189",
+      "mastery_level": "developing",
+      "feedback": "Good effort! Keep practicing to strengthen your understanding."
+    },
+    {
+      "student_id": "student_002",
+      "concept_id": "concept_multiplication_basic",
+      "performance_score": 0.587,
+      "attempts": 4,
+      "time_spent": 1.56,
+      "strengths": [
+        "addition",
+        "visual_representation"
+      ],
+      "weaknesses": [
+        "mental_math"
+      ],
+      "last_attempt": "2025-08-02T07:52:14.494195",
+      "mastery_level": "developing",
+      "feedback": "Good effort! Keep practicing to strengthen your understanding."
+    },
+    {
+      "student_id": "student_002",
+      "concept_id": "concept_fraction_addition",
+      "performance_score": 0.341,
+      "attempts": 3,
+      "time_spent": 6.91,
+      "strengths": [
+        "estimation"
+      ],
+      "weaknesses": [
+        "multi_step_problems",
+        "large_numbers"
+      ],
+      "last_attempt": "2025-07-30T07:52:14.494201",
+      "mastery_level": "beginning",
+      "feedback": "Don't give up! Let's work on this together."
+    },
+    {
+      "student_id": "student_002",
+      "concept_id": "concept_lcm_advanced",
+      "performance_score": 0.28,
+      "attempts": 5,
+      "time_spent": 8.14,
+      "strengths": [
+        "subtraction"
+      ],
+      "weaknesses": [
+        "test_anxiety",
+        "decimals"
+      ],
+      "last_attempt": "2025-08-04T07:52:14.494207",
+      "mastery_level": "beginning",
+      "feedback": "Don't give up! Let's work on this together."
+    },
+    {
+      "student_id": "student_002",
+      "concept_id": "concept_algebraic_expressions",
+      "performance_score": 0.43,
+      "attempts": 2,
+      "time_spent": 11.09,
+      "strengths": [
+        "estimation"
+      ],
+      "weaknesses": [
+        "organization",
+        "time_management"
+      ],
+      "last_attempt": "2025-08-02T07:52:14.494212",
+      "mastery_level": "beginning",
+      "feedback": "Don't give up! Let's work on this together."
+    },
+    {
+      "student_id": "student_003",
+      "concept_id": "concept_decimal_basics",
+      "performance_score": 0.512,
+      "attempts": 4,
+      "time_spent": 3.67,
+      "strengths": [
+        "number_sense",
+        "problem_solving"
+      ],
+      "weaknesses": [
+        "decimals"
+      ],
+      "last_attempt": "2025-08-06T07:52:14.494220",
+      "mastery_level": "developing",
+      "feedback": "You're on the right track! A bit more practice will help."
+    },
+    {
+      "student_id": "student_003",
+      "concept_id": "concept_fraction_addition",
+      "performance_score": 0.808,
+      "attempts": 2,
+      "time_spent": 5.13,
+      "strengths": [
+        "multiplication",
+        "problem_solving",
+        "visual_representation"
+      ],
+      "weaknesses": [
+        "speed"
+      ],
+      "last_attempt": "2025-07-18T07:52:14.494227",
+      "mastery_level": "proficient",
+      "feedback": "Well done! You're making excellent progress."
+    },
+    {
+      "student_id": "student_003",
+      "concept_id": "concept_algebraic_expressions",
+      "performance_score": 0.436,
+      "attempts": 4,
+      "time_spent": 7.6,
+      "strengths": [
+        "pattern_recognition"
+      ],
+      "weaknesses": [
+        "fractions",
+        "mental_math"
+      ],
+      "last_attempt": "2025-07-23T07:52:14.494232",
+      "mastery_level": "beginning",
+      "feedback": "Don't give up! Let's work on this together."
+    },
+    {
+      "student_id": "student_003",
+      "concept_id": "concept_divisibility_rules",
+      "performance_score": 0.683,
+      "attempts": 3,
+      "time_spent": 3.0,
+      "strengths": [
+        "logical_thinking",
+        "problem_solving"
+      ],
+      "weaknesses": [
+        "word_problems"
+      ],
+      "last_attempt": "2025-07-20T07:52:14.494238",
+      "mastery_level": "developing",
+      "feedback": "You're on the right track! A bit more practice will help."
+    },
+    {
+      "student_id": "student_003",
+      "concept_id": "concept_basic_statistics",
+      "performance_score": 0.553,
+      "attempts": 4,
+      "time_spent": 3.28,
+      "strengths": [
+        "estimation",
+        "number_sense"
+      ],
+      "weaknesses": [
+        "organization"
+      ],
+      "last_attempt": "2025-07-25T07:52:14.494244",
+      "mastery_level": "developing",
+      "feedback": "You're on the right track! A bit more practice will help."
+    },
+    {
+      "student_id": "student_004",
+      "concept_id": "concept_fraction_multiplication",
+      "performance_score": 0.539,
+      "attempts": 3,
+      "time_spent": 6.19,
+      "strengths": [
+        "visual_representation",
+        "pattern_recognition"
+      ],
+      "weaknesses": [
+        "fractions"
+      ],
+      "last_attempt": "2025-07-31T07:52:14.494251",
+      "mastery_level": "developing",
+      "feedback": "Good effort! Keep practicing to strengthen your understanding."
+    },
+    {
+      "student_id": "student_004",
+      "concept_id": "concept_fraction_addition",
+      "performance_score": 0.476,
+      "attempts": 2,
+      "time_spent": 6.85,
+      "strengths": [
+        "division"
+      ],
+      "weaknesses": [
+        "large_numbers",
+        "fractions"
+      ],
+      "last_attempt": "2025-07-12T07:52:14.494256",
+      "mastery_level": "beginning",
+      "feedback": "You can do this! Let's break it down into smaller steps."
+    },
+    {
+      "student_id": "student_004",
+      "concept_id": "concept_multiplication_basic",
+      "performance_score": 0.491,
+      "attempts": 3,
+      "time_spent": 2.67,
+      "strengths": [
+        "addition"
+      ],
+      "weaknesses": [
+        "fractions",
+        "concentration"
+      ],
+      "last_attempt": "2025-07-21T07:52:14.494262",
+      "mastery_level": "beginning",
+      "feedback": "Don't give up! Let's work on this together."
+    },
+    {
+      "student_id": "student_005",
+      "concept_id": "concept_lcm_basic",
+      "performance_score": 0.87,
+      "attempts": 1,
+      "time_spent": 2.48,
+      "strengths": [
+        "patience",
+        "problem_solving",
+        "visual_representation"
+      ],
+      "weaknesses": [
+        "speed"
+      ],
+      "last_attempt": "2025-07-17T07:52:14.494269",
+      "mastery_level": "proficient",
+      "feedback": "Well done! You're making excellent progress."
+    },
+    {
+      "student_id": "student_005",
+      "concept_id": "concept_volume",
+      "performance_score": 0.716,
+      "attempts": 1,
+      "time_spent": 5.96,
+      "strengths": [
+        "visual_representation",
+        "pattern_recognition"
+      ],
+      "weaknesses": [
+        "organization"
+      ],
+      "last_attempt": "2025-07-12T07:52:14.494275",
+      "mastery_level": "proficient",
+      "feedback": "Great job! You have a solid understanding of this concept."
+    },
+    {
+      "student_id": "student_005",
+      "concept_id": "concept_multiplication_basic",
+      "performance_score": 0.93,
+      "attempts": 2,
+      "time_spent": 1.24,
+      "strengths": [
+        "number_sense",
+        "problem_solving",
+        "patience"
+      ],
+      "weaknesses": [
+        "fractions"
+      ],
+      "last_attempt": "2025-07-29T07:52:14.494281",
+      "mastery_level": "mastered",
+      "feedback": "Outstanding performance! You're ready for more challenging material."
+    },
+    {
+      "student_id": "student_006",
+      "concept_id": "concept_fraction_basics",
+      "performance_score": 0.426,
+      "attempts": 2,
+      "time_spent": 4.6,
+      "strengths": [
+        "division"
+      ],
+      "weaknesses": [
+        "speed",
+        "decimals"
+      ],
+      "last_attempt": "2025-08-02T07:52:14.494290",
+      "mastery_level": "beginning",
+      "feedback": "Don't give up! Let's work on this together."
+    },
+    {
+      "student_id": "student_006",
+      "concept_id": "concept_decimal_basics",
+      "performance_score": 0.6,
+      "attempts": 3,
+      "time_spent": 3.74,
+      "strengths": [
+        "estimation",
+        "subtraction"
+      ],
+      "weaknesses": [
+        "speed"
+      ],
+      "last_attempt": "2025-07-28T07:52:14.494295",
+      "mastery_level": "developing",
+      "feedback": "Good effort! Keep practicing to strengthen your understanding."
+    },
+    {
+      "student_id": "student_006",
+      "concept_id": "concept_lcm_basic",
+      "performance_score": 0.586,
+      "attempts": 3,
+      "time_spent": 3.24,
+      "strengths": [
+        "attention_to_detail",
+        "subtraction"
+      ],
+      "weaknesses": [
+        "concentration"
+      ],
+      "last_attempt": "2025-07-25T07:52:14.494301",
+      "mastery_level": "developing",
+      "feedback": "You're on the right track! A bit more practice will help."
+    },
+    {
+      "student_id": "student_006",
+      "concept_id": "concept_divisibility_rules",
+      "performance_score": 0.604,
+      "attempts": 4,
+      "time_spent": 4.33,
+      "strengths": [
+        "pattern_recognition",
+        "attention_to_detail"
+      ],
+      "weaknesses": [
+        "concentration"
+      ],
+      "last_attempt": "2025-07-22T07:52:14.494306",
+      "mastery_level": "developing",
+      "feedback": "Nice work! Focus on the areas that need improvement."
+    },
+    {
+      "student_id": "student_006",
+      "concept_id": "concept_multiplication_basic",
+      "performance_score": 0.459,
+      "attempts": 4,
+      "time_spent": 3.32,
+      "strengths": [
+        "problem_solving"
+      ],
+      "weaknesses": [
+        "concentration",
+        "fractions"
+      ],
+      "last_attempt": "2025-07-23T07:52:14.494312",
+      "mastery_level": "beginning",
+      "feedback": "Don't give up! Let's work on this together."
+    },
+    {
+      "student_id": "student_006",
+      "concept_id": "concept_gcf_basic",
+      "performance_score": 0.395,
+      "attempts": 3,
+      "time_spent": 6.49,
+      "strengths": [
+        "logical_thinking"
+      ],
+      "weaknesses": [
+        "multi_step_problems",
+        "word_problems"
+      ],
+      "last_attempt": "2025-08-05T07:52:14.494319",
+      "mastery_level": "beginning",
+      "feedback": "Don't give up! Let's work on this together."
+    },
+    {
+      "student_id": "student_007",
+      "concept_id": "concept_decimal_basics",
+      "performance_score": 0.637,
+      "attempts": 4,
+      "time_spent": 3.77,
+      "strengths": [
+        "addition",
+        "subtraction"
+      ],
+      "weaknesses": [
+        "time_management"
+      ],
+      "last_attempt": "2025-07-28T07:52:14.494327",
+      "mastery_level": "developing",
+      "feedback": "You're on the right track! A bit more practice will help."
+    },
+    {
+      "student_id": "student_007",
+      "concept_id": "concept_simple_equations",
+      "performance_score": 0.665,
+      "attempts": 4,
+      "time_spent": 4.99,
+      "strengths": [
+        "division",
+        "estimation"
+      ],
+      "weaknesses": [
+        "multi_step_problems"
+      ],
+      "last_attempt": "2025-08-08T07:52:14.494332",
+      "mastery_level": "developing",
+      "feedback": "You're on the right track! A bit more practice will help."
+    },
+    {
+      "student_id": "student_007",
+      "concept_id": "concept_fraction_basics",
+      "performance_score": 0.965,
+      "attempts": 2,
+      "time_spent": 3.26,
+      "strengths": [
+        "division",
+        "number_sense",
+        "logical_thinking"
+      ],
+      "weaknesses": [
+        "reading_comprehension"
+      ],
+      "last_attempt": "2025-08-09T07:52:14.494338",
+      "mastery_level": "mastered",
+      "feedback": "Perfect! You demonstrate deep understanding of this topic."
+    },
+    {
+      "student_id": "student_007",
+      "concept_id": "concept_multiplication_basic",
+      "performance_score": 1.0,
+      "attempts": 1,
+      "time_spent": 1.32,
+      "strengths": [
+        "visual_representation",
+        "attention_to_detail",
+        "multiplication",
+        "addition"
+      ],
+      "weaknesses": [
+        "reading_comprehension"
+      ],
+      "last_attempt": "2025-08-06T07:52:14.494344",
+      "mastery_level": "mastered",
+      "feedback": "Excellent work! You've mastered this concept completely."
+    },
+    {
+      "student_id": "student_008",
+      "concept_id": "concept_fraction_multiplication",
+      "performance_score": 0.311,
+      "attempts": 3,
+      "time_spent": 9.13,
+      "strengths": [
+        "problem_solving"
+      ],
+      "weaknesses": [
+        "organization",
+        "speed"
+      ],
+      "last_attempt": "2025-07-20T07:52:14.494352",
+      "mastery_level": "beginning",
+      "feedback": "You can do this! Let's break it down into smaller steps."
+    },
+    {
+      "student_id": "student_008",
+      "concept_id": "concept_algebraic_expressions",
+      "performance_score": 0.458,
+      "attempts": 4,
+      "time_spent": 10.34,
+      "strengths": [
+        "patience"
+      ],
+      "weaknesses": [
+        "reading_comprehension",
+        "mental_math"
+      ],
+      "last_attempt": "2025-07-21T07:52:14.494358",
+      "mastery_level": "beginning",
+      "feedback": "Keep trying! Math takes practice and patience."
+    },
+    {
+      "student_id": "student_008",
+      "concept_id": "concept_decimal_basics",
+      "performance_score": 0.369,
+      "attempts": 6,
+      "time_spent": 7.48,
+      "strengths": [
+        "patience"
+      ],
+      "weaknesses": [
+        "large_numbers",
+        "speed"
+      ],
+      "last_attempt": "2025-07-20T07:52:14.494363",
+      "mastery_level": "beginning",
+      "feedback": "Don't give up! Let's work on this together."
+    },
+    {
+      "student_id": "student_008",
+      "concept_id": "concept_lcm_basic",
+      "performance_score": 0.467,
+      "attempts": 4,
+      "time_spent": 5.99,
+      "strengths": [
+        "division"
+      ],
+      "weaknesses": [
+        "word_problems",
+        "speed"
+      ],
+      "last_attempt": "2025-07-23T07:52:14.494369",
+      "mastery_level": "beginning",
+      "feedback": "Keep trying! Math takes practice and patience."
+    },
+    {
+      "student_id": "student_009",
+      "concept_id": "concept_divisibility_rules",
+      "performance_score": 0.669,
+      "attempts": 3,
+      "time_spent": 3.43,
+      "strengths": [
+        "patience",
+        "multiplication"
+      ],
+      "weaknesses": [
+        "speed"
+      ],
+      "last_attempt": "2025-07-30T07:52:14.494376",
+      "mastery_level": "developing",
+      "feedback": "Nice work! Focus on the areas that need improvement."
+    },
+    {
+      "student_id": "student_009",
+      "concept_id": "concept_fraction_basics",
+      "performance_score": 0.789,
+      "attempts": 2,
+      "time_spent": 4.19,
+      "strengths": [
+        "subtraction",
+        "number_sense",
+        "logical_thinking"
+      ],
+      "weaknesses": [
+        "mental_math"
+      ],
+      "last_attempt": "2025-08-09T07:52:14.494382",
+      "mastery_level": "proficient",
+      "feedback": "Good work! You're ready to move to the next level."
+    },
+    {
+      "student_id": "student_009",
+      "concept_id": "concept_area_perimeter",
+      "performance_score": 0.845,
+      "attempts": 2,
+      "time_spent": 3.27,
+      "strengths": [
+        "multiplication",
+        "problem_solving",
+        "visual_representation"
+      ],
+      "weaknesses": [
+        "word_problems"
+      ],
+      "last_attempt": "2025-07-28T07:52:14.494388",
+      "mastery_level": "proficient",
+      "feedback": "Well done! You're making excellent progress."
+    },
+    {
+      "student_id": "student_009",
+      "concept_id": "concept_fraction_addition",
+      "performance_score": 0.635,
+      "attempts": 2,
+      "time_spent": 5.81,
+      "strengths": [
+        "attention_to_detail",
+        "number_sense"
+      ],
+      "weaknesses": [
+        "concentration"
+      ],
+      "last_attempt": "2025-08-10T07:52:14.494393",
+      "mastery_level": "developing",
+      "feedback": "Good effort! Keep practicing to strengthen your understanding."
+    },
+    {
+      "student_id": "student_009",
+      "concept_id": "concept_fraction_multiplication",
+      "performance_score": 0.53,
+      "attempts": 4,
+      "time_spent": 5.54,
+      "strengths": [
+        "patience",
+        "logical_thinking"
+      ],
+      "weaknesses": [
+        "large_numbers"
+      ],
+      "last_attempt": "2025-08-04T07:52:14.494399",
+      "mastery_level": "developing",
+      "feedback": "Nice work! Focus on the areas that need improvement."
+    },
+    {
+      "student_id": "student_010",
+      "concept_id": "concept_lcm_advanced",
+      "performance_score": 0.511,
+      "attempts": 3,
+      "time_spent": 4.63,
+      "strengths": [
+        "patience",
+        "subtraction"
+      ],
+      "weaknesses": [
+        "reading_comprehension"
+      ],
+      "last_attempt": "2025-07-20T07:52:14.494407",
+      "mastery_level": "developing",
+      "feedback": "You're on the right track! A bit more practice will help."
+    },
+    {
+      "student_id": "student_010",
+      "concept_id": "concept_decimal_basics",
+      "performance_score": 0.442,
+      "attempts": 4,
+      "time_spent": 6.13,
+      "strengths": [
+        "patience"
+      ],
+      "weaknesses": [
+        "organization",
+        "test_anxiety"
+      ],
+      "last_attempt": "2025-07-24T07:52:14.494413",
+      "mastery_level": "beginning",
+      "feedback": "Don't give up! Let's work on this together."
+    },
+    {
+      "student_id": "student_010",
+      "concept_id": "concept_fraction_addition",
+      "performance_score": 0.55,
+      "attempts": 3,
+      "time_spent": 5.89,
+      "strengths": [
+        "visual_representation",
+        "patience"
+      ],
+      "weaknesses": [
+        "time_management"
+      ],
+      "last_attempt": "2025-08-05T07:52:14.494418",
+      "mastery_level": "developing",
+      "feedback": "You're on the right track! A bit more practice will help."
+    },
+    {
+      "student_id": "student_010",
+      "concept_id": "concept_multiplication_basic",
+      "performance_score": 0.567,
+      "attempts": 4,
+      "time_spent": 1.88,
+      "strengths": [
+        "logical_thinking",
+        "attention_to_detail"
+      ],
+      "weaknesses": [
+        "fractions"
+      ],
+      "last_attempt": "2025-07-27T07:52:14.494424",
+      "mastery_level": "developing",
+      "feedback": "Nice work! Focus on the areas that need improvement."
+    },
+    {
+      "student_id": "student_010",
+      "concept_id": "concept_divisibility_rules",
+      "performance_score": 0.348,
+      "attempts": 4,
+      "time_spent": 4.73,
+      "strengths": [
+        "multiplication"
+      ],
+      "weaknesses": [
+        "speed",
+        "test_anxiety"
+      ],
+      "last_attempt": "2025-08-07T07:52:14.494429",
+      "mastery_level": "beginning",
+      "feedback": "Keep trying! Math takes practice and patience."
+    },
+    {
+      "student_id": "student_010",
+      "concept_id": "concept_fraction_basics",
+      "performance_score": 0.348,
+      "attempts": 3,
+      "time_spent": 4.55,
+      "strengths": [
+        "number_sense"
+      ],
+      "weaknesses": [
+        "decimals",
+        "test_anxiety"
+      ],
+      "last_attempt": "2025-08-11T07:52:14.494435",
+      "mastery_level": "beginning",
+      "feedback": "You can do this! Let's break it down into smaller steps."
+    },
+    {
+      "student_id": "student_010",
+      "concept_id": "concept_volume",
+      "performance_score": 0.556,
+      "attempts": 3,
+      "time_spent": 5.4,
+      "strengths": [
+        "logical_thinking",
+        "problem_solving"
+      ],
+      "weaknesses": [
+        "time_management"
+      ],
+      "last_attempt": "2025-08-01T07:52:14.494441",
+      "mastery_level": "developing",
+      "feedback": "Good effort! Keep practicing to strengthen your understanding."
+    },
+    {
+      "student_id": "student_010",
+      "concept_id": "concept_fraction_multiplication",
+      "performance_score": 0.299,
+      "attempts": 4,
+      "time_spent": 7.52,
+      "strengths": [
+        "estimation"
+      ],
+      "weaknesses": [
+        "concentration",
+        "reading_comprehension"
+      ],
+      "last_attempt": "2025-08-04T07:52:14.494446",
+      "mastery_level": "beginning",
+      "feedback": "Don't give up! Let's work on this together."
+    },
+    {
+      "student_id": "student_011",
+      "concept_id": "concept_area_perimeter",
+      "performance_score": 0.622,
+      "attempts": 3,
+      "time_spent": 3.56,
+      "strengths": [
+        "estimation",
+        "pattern_recognition"
+      ],
+      "weaknesses": [
+        "time_management"
+      ],
+      "last_attempt": "2025-07-28T07:52:14.494454",
+      "mastery_level": "developing",
+      "feedback": "You're on the right track! A bit more practice will help."
+    },
+    {
+      "student_id": "student_011",
+      "concept_id": "concept_gcf_basic",
+      "performance_score": 0.609,
+      "attempts": 2,
+      "time_spent": 3.1,
+      "strengths": [
+        "estimation",
+        "pattern_recognition"
+      ],
+      "weaknesses": [
+        "decimals"
+      ],
+      "last_attempt": "2025-07-15T07:52:14.494459",
+      "mastery_level": "developing",
+      "feedback": "You're on the right track! A bit more practice will help."
+    },
+    {
+      "student_id": "student_011",
+      "concept_id": "concept_fraction_multiplication",
+      "performance_score": 0.429,
+      "attempts": 2,
+      "time_spent": 7.56,
+      "strengths": [
+        "visual_representation"
+      ],
+      "weaknesses": [
+        "multi_step_problems",
+        "organization"
+      ],
+      "last_attempt": "2025-08-01T07:52:14.494465",
+      "mastery_level": "beginning",
+      "feedback": "Don't give up! Let's work on this together."
+    },
+    {
+      "student_id": "student_011",
+      "concept_id": "concept_algebraic_expressions",
+      "performance_score": 0.547,
+      "attempts": 3,
+      "time_spent": 6.09,
+      "strengths": [
+        "number_sense",
+        "pattern_recognition"
+      ],
+      "weaknesses": [
+        "mental_math"
+      ],
+      "last_attempt": "2025-07-25T07:52:14.494471",
+      "mastery_level": "developing",
+      "feedback": "You're on the right track! A bit more practice will help."
+    },
+    {
+      "student_id": "student_011",
+      "concept_id": "concept_lcm_basic",
+      "performance_score": 0.767,
+      "attempts": 3,
+      "time_spent": 3.61,
+      "strengths": [
+        "visual_representation",
+        "estimation",
+        "pattern_recognition"
+      ],
+      "weaknesses": [
+        "word_problems"
+      ],
+      "last_attempt": "2025-08-02T07:52:14.494476",
+      "mastery_level": "proficient",
+      "feedback": "Well done! You're making excellent progress."
+    },
+    {
+      "student_id": "student_012",
+      "concept_id": "concept_area_perimeter",
+      "performance_score": 0.874,
+      "attempts": 3,
+      "time_spent": 2.81,
+      "strengths": [
+        "subtraction",
+        "estimation",
+        "division"
+      ],
+      "weaknesses": [
+        "test_anxiety"
+      ],
+      "last_attempt": "2025-07-15T07:52:14.494484",
+      "mastery_level": "proficient",
+      "feedback": "Good work! You're ready to move to the next level."
+    },
+    {
+      "student_id": "student_012",
+      "concept_id": "concept_fraction_multiplication",
+      "performance_score": 0.454,
+      "attempts": 2,
+      "time_spent": 10.68,
+      "strengths": [
+        "number_sense"
+      ],
+      "weaknesses": [
+        "time_management",
+        "large_numbers"
+      ],
+      "last_attempt": "2025-07-13T07:52:14.494490",
+      "mastery_level": "beginning",
+      "feedback": "Keep trying! Math takes practice and patience."
+    },
+    {
+      "student_id": "student_012",
+      "concept_id": "concept_basic_statistics",
+      "performance_score": 0.635,
+      "attempts": 3,
+      "time_spent": 3.55,
+      "strengths": [
+        "patience",
+        "addition"
+      ],
+      "weaknesses": [
+        "mental_math"
+      ],
+      "last_attempt": "2025-07-18T07:52:14.494497",
+      "mastery_level": "developing",
+      "feedback": "Nice work! Focus on the areas that need improvement."
+    },
+    {
+      "student_id": "student_012",
+      "concept_id": "concept_fraction_addition",
+      "performance_score": 0.553,
+      "attempts": 2,
+      "time_spent": 4.55,
+      "strengths": [
+        "number_sense",
+        "attention_to_detail"
+      ],
+      "weaknesses": [
+        "decimals"
+      ],
+      "last_attempt": "2025-08-11T07:52:14.494503",
+      "mastery_level": "developing",
+      "feedback": "You're on the right track! A bit more practice will help."
+    },
+    {
+      "student_id": "student_012",
+      "concept_id": "concept_simple_equations",
+      "performance_score": 0.668,
+      "attempts": 3,
+      "time_spent": 4.9,
+      "strengths": [
+        "subtraction",
+        "patience"
+      ],
+      "weaknesses": [
+        "speed"
+      ],
+      "last_attempt": "2025-08-04T07:52:14.494508",
+      "mastery_level": "developing",
+      "feedback": "Good effort! Keep practicing to strengthen your understanding."
+    },
+    {
+      "student_id": "student_012",
+      "concept_id": "concept_lcm_basic",
+      "performance_score": 0.657,
+      "attempts": 3,
+      "time_spent": 3.28,
+      "strengths": [
+        "problem_solving",
+        "subtraction"
+      ],
+      "weaknesses": [
+        "decimals"
+      ],
+      "last_attempt": "2025-08-02T07:52:14.494513",
+      "mastery_level": "developing",
+      "feedback": "Nice work! Focus on the areas that need improvement."
+    },
+    {
+      "student_id": "student_013",
+      "concept_id": "concept_lcm_advanced",
+      "performance_score": 0.304,
+      "attempts": 3,
+      "time_spent": 8.56,
+      "strengths": [
+        "visual_representation"
+      ],
+      "weaknesses": [
+        "fractions",
+        "mental_math"
+      ],
+      "last_attempt": "2025-07-30T07:52:14.494520",
+      "mastery_level": "beginning",
+      "feedback": "Don't give up! Let's work on this together."
+    },
+    {
+      "student_id": "student_013",
+      "concept_id": "concept_lcm_basic",
+      "performance_score": 0.369,
+      "attempts": 3,
+      "time_spent": 6.4,
+      "strengths": [
+        "pattern_recognition"
+      ],
+      "weaknesses": [
+        "fractions",
+        "test_anxiety"
+      ],
+      "last_attempt": "2025-08-04T07:52:14.494525",
+      "mastery_level": "beginning",
+      "feedback": "Keep trying! Math takes practice and patience."
+    },
+    {
+      "student_id": "student_013",
+      "concept_id": "concept_simple_probability",
+      "performance_score": 0.469,
+      "attempts": 2,
+      "time_spent": 6.29,
+      "strengths": [
+        "patience"
+      ],
+      "weaknesses": [
+        "reading_comprehension",
+        "fractions"
+      ],
+      "last_attempt": "2025-08-06T07:52:14.494530",
+      "mastery_level": "beginning",
+      "feedback": "Keep trying! Math takes practice and patience."
+    },
+    {
+      "student_id": "student_013",
+      "concept_id": "concept_fraction_addition",
+      "performance_score": 0.412,
+      "attempts": 3,
+      "time_spent": 11.04,
+      "strengths": [
+        "division"
+      ],
+      "weaknesses": [
+        "large_numbers",
+        "multi_step_problems"
+      ],
+      "last_attempt": "2025-07-26T07:52:14.494535",
+      "mastery_level": "beginning",
+      "feedback": "Keep trying! Math takes practice and patience."
+    },
+    {
+      "student_id": "student_013",
+      "concept_id": "concept_basic_statistics",
+      "performance_score": 0.451,
+      "attempts": 3,
+      "time_spent": 6.85,
+      "strengths": [
+        "multiplication"
+      ],
+      "weaknesses": [
+        "multi_step_problems",
+        "decimals"
+      ],
+      "last_attempt": "2025-07-21T07:52:14.494541",
+      "mastery_level": "beginning",
+      "feedback": "Keep trying! Math takes practice and patience."
+    },
+    {
+      "student_id": "student_014",
+      "concept_id": "concept_simple_probability",
+      "performance_score": 0.732,
+      "attempts": 1,
+      "time_spent": 4.14,
+      "strengths": [
+        "patience",
+        "division"
+      ],
+      "weaknesses": [
+        "large_numbers"
+      ],
+      "last_attempt": "2025-08-03T07:52:14.494548",
+      "mastery_level": "proficient",
+      "feedback": "Well done! You're making excellent progress."
+    },
+    {
+      "student_id": "student_014",
+      "concept_id": "concept_lcm_advanced",
+      "performance_score": 0.511,
+      "attempts": 3,
+      "time_spent": 4.72,
+      "strengths": [
+        "patience",
+        "division"
+      ],
+      "weaknesses": [
+        "fractions"
+      ],
+      "last_attempt": "2025-08-01T07:52:14.494554",
+      "mastery_level": "developing",
+      "feedback": "You're on the right track! A bit more practice will help."
+    },
+    {
+      "student_id": "student_014",
+      "concept_id": "concept_area_perimeter",
+      "performance_score": 0.568,
+      "attempts": 4,
+      "time_spent": 4.33,
+      "strengths": [
+        "patience",
+        "attention_to_detail"
+      ],
+      "weaknesses": [
+        "multi_step_problems"
+      ],
+      "last_attempt": "2025-07-18T07:52:14.494559",
+      "mastery_level": "developing",
+      "feedback": "You're on the right track! A bit more practice will help."
+    },
+    {
+      "student_id": "student_014",
+      "concept_id": "concept_fraction_basics",
+      "performance_score": 0.725,
+      "attempts": 3,
+      "time_spent": 4.19,
+      "strengths": [
+        "logical_thinking",
+        "pattern_recognition"
+      ],
+      "weaknesses": [
+        "mental_math"
+      ],
+      "last_attempt": "2025-08-07T07:52:14.494564",
+      "mastery_level": "proficient",
+      "feedback": "Good work! You're ready to move to the next level."
+    },
+    {
+      "student_id": "student_014",
+      "concept_id": "concept_gcf_basic",
+      "performance_score": 0.56,
+      "attempts": 2,
+      "time_spent": 3.69,
+      "strengths": [
+        "subtraction",
+        "attention_to_detail"
+      ],
+      "weaknesses": [
+        "mental_math"
+      ],
+      "last_attempt": "2025-08-07T07:52:14.494569",
+      "mastery_level": "developing",
+      "feedback": "Good effort! Keep practicing to strengthen your understanding."
+    },
+    {
+      "student_id": "student_014",
+      "concept_id": "concept_divisibility_rules",
+      "performance_score": 0.429,
+      "attempts": 3,
+      "time_spent": 4.74,
+      "strengths": [
+        "logical_thinking"
+      ],
+      "weaknesses": [
+        "word_problems",
+        "speed"
+      ],
+      "last_attempt": "2025-07-26T07:52:14.494574",
+      "mastery_level": "beginning",
+      "feedback": "You can do this! Let's break it down into smaller steps."
+    },
+    {
+      "student_id": "student_014",
+      "concept_id": "concept_algebraic_expressions",
+      "performance_score": 0.407,
+      "attempts": 4,
+      "time_spent": 8.0,
+      "strengths": [
+        "subtraction"
+      ],
+      "weaknesses": [
+        "speed",
+        "multi_step_problems"
+      ],
+      "last_attempt": "2025-07-30T07:52:14.494579",
+      "mastery_level": "beginning",
+      "feedback": "Don't give up! Let's work on this together."
+    },
+    {
+      "student_id": "student_015",
+      "concept_id": "concept_volume",
+      "performance_score": 0.706,
+      "attempts": 2,
+      "time_spent": 6.46,
+      "strengths": [
+        "problem_solving",
+        "multiplication"
+      ],
+      "weaknesses": [
+        "fractions"
+      ],
+      "last_attempt": "2025-07-13T07:52:14.494586",
+      "mastery_level": "proficient",
+      "feedback": "Well done! You're making excellent progress."
+    },
+    {
+      "student_id": "student_015",
+      "concept_id": "concept_decimal_basics",
+      "performance_score": 0.857,
+      "attempts": 1,
+      "time_spent": 3.39,
+      "strengths": [
+        "subtraction",
+        "visual_representation",
+        "attention_to_detail"
+      ],
+      "weaknesses": [
+        "multi_step_problems"
+      ],
+      "last_attempt": "2025-07-30T07:52:14.494592",
+      "mastery_level": "proficient",
+      "feedback": "Well done! You're making excellent progress."
+    },
+    {
+      "student_id": "student_015",
+      "concept_id": "concept_lcm_basic",
+      "performance_score": 0.867,
+      "attempts": 1,
+      "time_spent": 2.71,
+      "strengths": [
+        "problem_solving",
+        "multiplication",
+        "number_sense"
+      ],
+      "weaknesses": [
+        "word_problems"
+      ],
+      "last_attempt": "2025-08-04T07:52:14.494597",
+      "mastery_level": "proficient",
+      "feedback": "Well done! You're making excellent progress."
+    },
+    {
+      "student_id": "student_015",
+      "concept_id": "concept_lcm_advanced",
+      "performance_score": 0.519,
+      "attempts": 3,
+      "time_spent": 6.54,
+      "strengths": [
+        "visual_representation",
+        "estimation"
+      ],
+      "weaknesses": [
+        "test_anxiety"
+      ],
+      "last_attempt": "2025-07-12T07:52:14.494602",
+      "mastery_level": "developing",
+      "feedback": "Good effort! Keep practicing to strengthen your understanding."
+    },
+    {
+      "student_id": "student_015",
+      "concept_id": "concept_decimal_operations",
+      "performance_score": 0.552,
+      "attempts": 2,
+      "time_spent": 5.03,
+      "strengths": [
+        "estimation",
+        "division"
+      ],
+      "weaknesses": [
+        "concentration"
+      ],
+      "last_attempt": "2025-07-20T07:52:14.494607",
+      "mastery_level": "developing",
+      "feedback": "Nice work! Focus on the areas that need improvement."
+    },
+    {
+      "student_id": "student_015",
+      "concept_id": "concept_basic_statistics",
+      "performance_score": 0.684,
+      "attempts": 4,
+      "time_spent": 3.64,
+      "strengths": [
+        "estimation",
+        "subtraction"
+      ],
+      "weaknesses": [
+        "word_problems"
+      ],
+      "last_attempt": "2025-08-05T07:52:14.494612",
+      "mastery_level": "developing",
+      "feedback": "Good effort! Keep practicing to strengthen your understanding."
+    }
+  ],
+  "learning_journeys": [
+    {
+      "journey_id": "journey_student_001",
+      "student_id": "student_001",
+      "current_concept": "concept_volume",
+      "learning_path": [
+        "concept_basic_statistics",
+        "concept_decimal_operations",
+        "concept_volume"
+      ],
+      "completed_concepts": [
+        "concept_basic_statistics",
+        "concept_decimal_operations"
+      ],
+      "next_recommendations": [
+        "concept_multiplication_basic"
+      ],
+      "alternative_paths": [
+        [
+          "concept_fraction_multiplication",
+          "concept_lcm_basic",
+          "concept_area_perimeter"
+        ]
+      ],
+      "learning_goals": [
+        "Complete current concept with 80% or higher",
+        "Build confidence in math",
+        "Practice problem-solving skills"
+      ],
+      "estimated_completion": "2025-08-16T07:52:14.494653",
+      "overall_progress": 0.667,
+      "total_study_time": 8.5,
+      "average_performance": 0.406,
+      "learning_pace": "fast",
+      "preferred_difficulty": 3,
+      "last_activity": "2025-08-11T07:52:14.494666",
+      "created_at": "2025-08-11T07:52:14.494672",
+      "updated_at": "2025-08-11T07:52:14.494676"
+    },
+    {
+      "journey_id": "journey_student_002",
+      "student_id": "student_002",
+      "current_concept": "concept_simple_equations",
+      "learning_path": [
+        "concept_gcf_basic",
+        "concept_multiplication_basic",
+        "concept_simple_equations"
+      ],
+      "completed_concepts": [
+        "concept_gcf_basic",
+        "concept_multiplication_basic"
+      ],
+      "next_recommendations": [],
+      "alternative_paths": [
+        [
+          "concept_lcm_advanced",
+          "concept_fraction_addition",
+          "concept_decimal_basics"
+        ]
+      ],
+      "learning_goals": [
+        "Prepare for next grade level",
+        "Build confidence in math",
+        "Practice problem-solving skills"
+      ],
+      "estimated_completion": "2025-08-18T07:52:14.494695",
+      "overall_progress": 0.667,
+      "total_study_time": 8.0,
+      "average_performance": 0.436,
+      "learning_pace": "fast",
+      "preferred_difficulty": 1,
+      "last_activity": "2025-08-11T07:52:14.494701",
+      "created_at": "2025-08-11T07:52:14.494703",
+      "updated_at": "2025-08-11T07:52:14.494705"
+    },
+    {
+      "journey_id": "journey_student_003",
+      "student_id": "student_003",
+      "current_concept": "concept_lcm_basic",
+      "learning_path": [
+        "concept_decimal_operations",
+        "concept_gcf_basic",
+        "concept_area_perimeter",
+        "concept_multiplication_basic",
+        "concept_volume",
+        "concept_lcm_basic"
+      ],
+      "completed_concepts": [
+        "concept_decimal_operations",
+        "concept_gcf_basic",
+        "concept_area_perimeter",
+        "concept_multiplication_basic",
+        "concept_volume"
+      ],
+      "next_recommendations": [],
+      "alternative_paths": [
+        [
+          "concept_simple_probability",
+          "concept_fraction_addition",
+          "concept_lcm_advanced"
+        ]
+      ],
+      "learning_goals": [
+        "Complete current concept with 80% or higher",
+        "Practice problem-solving skills"
+      ],
+      "estimated_completion": "2025-08-17T07:52:14.494722",
+      "overall_progress": 0.833,
+      "total_study_time": 16.5,
+      "average_performance": 0.962,
+      "learning_pace": "average",
+      "preferred_difficulty": 3,
+      "last_activity": "2025-08-11T07:52:14.494727",
+      "created_at": "2025-08-11T07:52:14.494729",
+      "updated_at": "2025-08-11T07:52:14.494730"
+    },
+    {
+      "journey_id": "journey_student_004",
+      "student_id": "student_004",
+      "current_concept": "concept_divisibility_rules",
+      "learning_path": [
+        "concept_multiplication_basic",
+        "concept_simple_equations",
+        "concept_lcm_advanced",
+        "concept_fraction_addition",
+        "concept_simple_probability",
+        "concept_divisibility_rules"
+      ],
+      "completed_concepts": [
+        "concept_multiplication_basic",
+        "concept_simple_equations",
+        "concept_lcm_advanced",
+        "concept_fraction_addition",
+        "concept_simple_probability"
+      ],
+      "next_recommendations": [],
+      "alternative_paths": [
+        [
+          "concept_volume",
+          "concept_gcf_basic",
+          "concept_fraction_basics"
+        ]
+      ],
+      "learning_goals": [
+        "Practice problem-solving skills",
+        "Prepare for next grade level",
+        "Complete current concept with 80% or higher"
+      ],
+      "estimated_completion": "2025-08-16T07:52:14.494746",
+      "overall_progress": 0.833,
+      "total_study_time": 16.0,
+      "average_performance": 0.617,
+      "learning_pace": "average",
+      "preferred_difficulty": 2,
+      "last_activity": "2025-08-11T07:52:14.494751",
+      "created_at": "2025-08-11T07:52:14.494753",
+      "updated_at": "2025-08-11T07:52:14.494754"
+    },
+    {
+      "journey_id": "journey_student_005",
+      "student_id": "student_005",
+      "current_concept": "concept_fraction_multiplication",
+      "learning_path": [
+        "concept_decimal_basics",
+        "concept_area_perimeter",
+        "concept_divisibility_rules",
+        "concept_gcf_basic",
+        "concept_decimal_operations",
+        "concept_multiplication_basic",
+        "concept_fraction_multiplication"
+      ],
+      "completed_concepts": [
+        "concept_decimal_basics",
+        "concept_area_perimeter",
+        "concept_divisibility_rules",
+        "concept_gcf_basic",
+        "concept_decimal_operations",
+        "concept_multiplication_basic"
+      ],
+      "next_recommendations": [],
+      "alternative_paths": [
+        [
+          "concept_simple_equations",
+          "concept_fraction_addition",
+          "concept_lcm_advanced"
+        ]
+      ],
+      "learning_goals": [
+        "Build confidence in math",
+        "Practice problem-solving skills"
+      ],
+      "estimated_completion": "2025-08-17T07:52:14.494770",
+      "overall_progress": 0.857,
+      "total_study_time": 19.0,
+      "average_performance": 0.505,
+      "learning_pace": "average",
+      "preferred_difficulty": 3,
+      "last_activity": "2025-08-11T07:52:14.494775",
+      "created_at": "2025-08-11T07:52:14.494776",
+      "updated_at": "2025-08-11T07:52:14.494778"
+    },
+    {
+      "journey_id": "journey_student_006",
+      "student_id": "student_006",
+      "current_concept": "concept_divisibility_rules",
+      "learning_path": [
+        "concept_simple_probability",
+        "concept_lcm_advanced",
+        "concept_basic_statistics",
+        "concept_fraction_addition",
+        "concept_algebraic_expressions",
+        "concept_volume",
+        "concept_fraction_multiplication",
+        "concept_divisibility_rules"
+      ],
+      "completed_concepts": [
+        "concept_simple_probability",
+        "concept_lcm_advanced",
+        "concept_basic_statistics",
+        "concept_fraction_addition",
+        "concept_algebraic_expressions",
+        "concept_volume",
+        "concept_fraction_multiplication"
+      ],
+      "next_recommendations": [
+        "concept_multiplication_basic"
+      ],
+      "alternative_paths": [
+        [
+          "concept_decimal_operations",
+          "concept_area_perimeter",
+          "concept_multiplication_basic"
+        ]
+      ],
+      "learning_goals": [
+        "Practice problem-solving skills",
+        "Complete current concept with 80% or higher"
+      ],
+      "estimated_completion": "2025-08-16T07:52:14.494794",
+      "overall_progress": 0.875,
+      "total_study_time": 21.5,
+      "average_performance": 0.54,
+      "learning_pace": "average",
+      "preferred_difficulty": 2,
+      "last_activity": "2025-08-11T07:52:14.494798",
+      "created_at": "2025-08-11T07:52:14.494800",
+      "updated_at": "2025-08-11T07:52:14.494802"
+    },
+    {
+      "journey_id": "journey_student_007",
+      "student_id": "student_007",
+      "current_concept": "concept_simple_probability",
+      "learning_path": [
+        "concept_gcf_basic",
+        "concept_area_perimeter",
+        "concept_simple_probability"
+      ],
+      "completed_concepts": [
+        "concept_gcf_basic",
+        "concept_area_perimeter"
+      ],
+      "next_recommendations": [
+        "concept_multiplication_basic"
+      ],
+      "alternative_paths": [
+        [
+          "concept_simple_equations",
+          "concept_decimal_basics",
+          "concept_fraction_addition"
+        ]
+      ],
+      "learning_goals": [
+        "Build confidence in math",
+        "Practice problem-solving skills",
+        "Prepare for next grade level"
+      ],
+      "estimated_completion": "2025-08-15T07:52:14.494816",
+      "overall_progress": 0.667,
+      "total_study_time": 7.5,
+      "average_performance": 0.849,
+      "learning_pace": "fast",
+      "preferred_difficulty": 4,
+      "last_activity": "2025-08-11T07:52:14.494820",
+      "created_at": "2025-08-11T07:52:14.494822",
+      "updated_at": "2025-08-11T07:52:14.494824"
+    },
+    {
+      "journey_id": "journey_student_008",
+      "student_id": "student_008",
+      "current_concept": "concept_gcf_basic",
+      "learning_path": [
+        "concept_algebraic_expressions",
+        "concept_decimal_operations",
+        "concept_volume",
+        "concept_simple_equations",
+        "concept_gcf_basic"
+      ],
+      "completed_concepts": [
+        "concept_algebraic_expressions",
+        "concept_decimal_operations",
+        "concept_volume",
+        "concept_simple_equations"
+      ],
+      "next_recommendations": [
+        "concept_multiplication_basic"
+      ],
+      "alternative_paths": [
+        [
+          "concept_fraction_basics",
+          "concept_fraction_multiplication",
+          "concept_simple_probability"
+        ]
+      ],
+      "learning_goals": [
+        "Prepare for next grade level",
+        "Build confidence in math"
+      ],
+      "estimated_completion": "2025-08-16T07:52:14.494838",
+      "overall_progress": 0.8,
+      "total_study_time": 15.0,
+      "average_performance": 0.714,
+      "learning_pace": "average",
+      "preferred_difficulty": 4,
+      "last_activity": "2025-08-11T07:52:14.494842",
+      "created_at": "2025-08-11T07:52:14.494844",
+      "updated_at": "2025-08-11T07:52:14.494846"
+    },
+    {
+      "journey_id": "journey_student_009",
+      "student_id": "student_009",
+      "current_concept": "concept_algebraic_expressions",
+      "learning_path": [
+        "concept_fraction_multiplication",
+        "concept_divisibility_rules",
+        "concept_decimal_basics",
+        "concept_algebraic_expressions"
+      ],
+      "completed_concepts": [
+        "concept_fraction_multiplication",
+        "concept_divisibility_rules",
+        "concept_decimal_basics"
+      ],
+      "next_recommendations": [
+        "concept_multiplication_basic"
+      ],
+      "alternative_paths": [
+        [
+          "concept_lcm_advanced",
+          "concept_area_perimeter",
+          "concept_fraction_basics"
+        ]
+      ],
+      "learning_goals": [
+        "Practice problem-solving skills",
+        "Build confidence in math"
+      ],
+      "estimated_completion": "2025-08-17T07:52:14.494859",
+      "overall_progress": 0.75,
+      "total_study_time": 11.0,
+      "average_performance": 0.519,
+      "learning_pace": "fast",
+      "preferred_difficulty": 3,
+      "last_activity": "2025-08-11T07:52:14.494864",
+      "created_at": "2025-08-11T07:52:14.494866",
+      "updated_at": "2025-08-11T07:52:14.494867"
+    },
+    {
+      "journey_id": "journey_student_010",
+      "student_id": "student_010",
+      "current_concept": "concept_basic_statistics",
+      "learning_path": [
+        "concept_decimal_basics",
+        "concept_fraction_multiplication",
+        "concept_fraction_basics",
+        "concept_gcf_basic",
+        "concept_area_perimeter",
+        "concept_lcm_advanced",
+        "concept_basic_statistics"
+      ],
+      "completed_concepts": [
+        "concept_decimal_basics",
+        "concept_fraction_multiplication",
+        "concept_fraction_basics",
+        "concept_gcf_basic",
+        "concept_area_perimeter",
+        "concept_lcm_advanced"
+      ],
+      "next_recommendations": [
+        "concept_multiplication_basic"
+      ],
+      "alternative_paths": [
+        [
+          "concept_divisibility_rules",
+          "concept_algebraic_expressions",
+          "concept_multiplication_basic"
+        ]
+      ],
+      "learning_goals": [
+        "Build confidence in math",
+        "Practice problem-solving skills"
+      ],
+      "estimated_completion": "2025-08-16T07:52:14.494883",
+      "overall_progress": 0.857,
+      "total_study_time": 19.0,
+      "average_performance": 0.902,
+      "learning_pace": "average",
+      "preferred_difficulty": 5,
+      "last_activity": "2025-08-11T07:52:14.494888",
+      "created_at": "2025-08-11T07:52:14.494890",
+      "updated_at": "2025-08-11T07:52:14.494892"
+    },
+    {
+      "journey_id": "journey_student_011",
+      "student_id": "student_011",
+      "current_concept": "concept_simple_probability",
+      "learning_path": [
+        "concept_volume",
+        "concept_divisibility_rules",
+        "concept_simple_probability"
+      ],
+      "completed_concepts": [
+        "concept_volume",
+        "concept_divisibility_rules"
+      ],
+      "next_recommendations": [
+        "concept_multiplication_basic"
+      ],
+      "alternative_paths": [
+        [
+          "concept_lcm_advanced",
+          "concept_multiplication_basic",
+          "concept_fraction_basics"
+        ]
+      ],
+      "learning_goals": [
+        "Prepare for next grade level",
+        "Build confidence in math"
+      ],
+      "estimated_completion": "2025-08-15T07:52:14.494906",
+      "overall_progress": 0.667,
+      "total_study_time": 7.0,
+      "average_performance": 0.797,
+      "learning_pace": "fast",
+      "preferred_difficulty": 2,
+      "last_activity": "2025-08-11T07:52:14.494910",
+      "created_at": "2025-08-11T07:52:14.494912",
+      "updated_at": "2025-08-11T07:52:14.494914"
+    },
+    {
+      "journey_id": "journey_student_012",
+      "student_id": "student_012",
+      "current_concept": "concept_lcm_advanced",
+      "learning_path": [
+        "concept_gcf_basic",
+        "concept_volume",
+        "concept_lcm_basic",
+        "concept_simple_probability",
+        "concept_lcm_advanced"
+      ],
+      "completed_concepts": [
+        "concept_gcf_basic",
+        "concept_volume",
+        "concept_lcm_basic",
+        "concept_simple_probability"
+      ],
+      "next_recommendations": [
+        "concept_multiplication_basic"
+      ],
+      "alternative_paths": [
+        [
+          "concept_decimal_basics",
+          "concept_algebraic_expressions",
+          "concept_decimal_operations"
+        ]
+      ],
+      "learning_goals": [
+        "Practice problem-solving skills",
+        "Build confidence in math",
+        "Complete current concept with 80% or higher"
+      ],
+      "estimated_completion": "2025-08-16T07:52:14.494928",
+      "overall_progress": 0.8,
+      "total_study_time": 12.5,
+      "average_performance": 0.52,
+      "learning_pace": "fast",
+      "preferred_difficulty": 1,
+      "last_activity": "2025-08-11T07:52:14.494933",
+      "created_at": "2025-08-11T07:52:14.494934",
+      "updated_at": "2025-08-11T07:52:14.494936"
+    },
+    {
+      "journey_id": "journey_student_013",
+      "student_id": "student_013",
+      "current_concept": "concept_area_perimeter",
+      "learning_path": [
+        "concept_basic_statistics",
+        "concept_fraction_basics",
+        "concept_volume",
+        "concept_area_perimeter"
+      ],
+      "completed_concepts": [
+        "concept_basic_statistics",
+        "concept_fraction_basics",
+        "concept_volume"
+      ],
+      "next_recommendations": [
+        "concept_multiplication_basic"
+      ],
+      "alternative_paths": [
+        [
+          "concept_decimal_operations",
+          "concept_lcm_basic",
+          "concept_fraction_multiplication"
+        ]
+      ],
+      "learning_goals": [
+        "Practice problem-solving skills",
+        "Complete current concept with 80% or higher",
+        "Prepare for next grade level"
+      ],
+      "estimated_completion": "2025-08-17T07:52:14.494950",
+      "overall_progress": 0.75,
+      "total_study_time": 11.0,
+      "average_performance": 0.814,
+      "learning_pace": "fast",
+      "preferred_difficulty": 4,
+      "last_activity": "2025-08-11T07:52:14.494954",
+      "created_at": "2025-08-11T07:52:14.494956",
+      "updated_at": "2025-08-11T07:52:14.494958"
+    },
+    {
+      "journey_id": "journey_student_014",
+      "student_id": "student_014",
+      "current_concept": "concept_gcf_basic",
+      "learning_path": [
+        "concept_fraction_multiplication",
+        "concept_basic_statistics",
+        "concept_lcm_basic",
+        "concept_divisibility_rules",
+        "concept_lcm_advanced",
+        "concept_gcf_basic"
+      ],
+      "completed_concepts": [
+        "concept_fraction_multiplication",
+        "concept_basic_statistics",
+        "concept_lcm_basic",
+        "concept_divisibility_rules",
+        "concept_lcm_advanced"
+      ],
+      "next_recommendations": [
+        "concept_multiplication_basic"
+      ],
+      "alternative_paths": [
+        [
+          "concept_decimal_basics",
+          "concept_simple_probability",
+          "concept_decimal_operations"
+        ]
+      ],
+      "learning_goals": [
+        "Prepare for next grade level",
+        "Practice problem-solving skills"
+      ],
+      "estimated_completion": "2025-08-16T07:52:14.494973",
+      "overall_progress": 0.833,
+      "total_study_time": 16.0,
+      "average_performance": 0.49,
+      "learning_pace": "average",
+      "preferred_difficulty": 2,
+      "last_activity": "2025-08-11T07:52:14.494978",
+      "created_at": "2025-08-11T07:52:14.494979",
+      "updated_at": "2025-08-11T07:52:14.494981"
+    },
+    {
+      "journey_id": "journey_student_015",
+      "student_id": "student_015",
+      "current_concept": "concept_basic_statistics",
+      "learning_path": [
+        "concept_multiplication_basic",
+        "concept_simple_probability",
+        "concept_area_perimeter",
+        "concept_gcf_basic",
+        "concept_fraction_multiplication",
+        "concept_simple_equations",
+        "concept_decimal_basics",
+        "concept_basic_statistics"
+      ],
+      "completed_concepts": [
+        "concept_multiplication_basic",
+        "concept_simple_probability",
+        "concept_area_perimeter",
+        "concept_gcf_basic",
+        "concept_fraction_multiplication",
+        "concept_simple_equations",
+        "concept_decimal_basics"
+      ],
+      "next_recommendations": [],
+      "alternative_paths": [
+        [
+          "concept_algebraic_expressions",
+          "concept_divisibility_rules",
+          "concept_lcm_advanced"
+        ]
+      ],
+      "learning_goals": [
+        "Complete current concept with 80% or higher",
+        "Build confidence in math"
+      ],
+      "estimated_completion": "2025-08-16T07:52:14.494997",
+      "overall_progress": 0.875,
+      "total_study_time": 21.0,
+      "average_performance": 0.777,
+      "learning_pace": "average",
+      "preferred_difficulty": 4,
+      "last_activity": "2025-08-11T07:52:14.495001",
+      "created_at": "2025-08-11T07:52:14.495003",
+      "updated_at": "2025-08-11T07:52:14.495004"
+    }
+  ]
+}

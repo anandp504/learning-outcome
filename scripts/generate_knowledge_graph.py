@@ -1,0 +1,673 @@
+#!/usr/bin/env python3
+"""Generate knowledge graph for Grade 6 math concepts."""
+
+import json
+import uuid
+from datetime import datetime
+from typing import List, Dict, Any
+
+
+def generate_concept_id(prefix: str, name: str) -> str:
+    """Generate a unique concept ID."""
+    return f"{prefix}_{name.lower().replace(' ', '_').replace('-', '_')}"
+
+
+def create_lcm_concepts() -> List[Dict[str, Any]]:
+    """Create LCM-related concepts."""
+    concepts = []
+    
+    # Basic multiplication concepts (prerequisites)
+    multiplication_basic = {
+        "concept_id": generate_concept_id("concept", "multiplication_basic"),
+        "name": "Basic Multiplication",
+        "grade_level": 6,
+        "description": "Understanding and performing basic multiplication operations with whole numbers",
+        "difficulty": 1,
+        "estimated_hours": 2.0,
+        "concept_type": "number_operations",
+        "learning_objectives": [
+            "Understand multiplication as repeated addition",
+            "Multiply single and double-digit numbers",
+            "Use multiplication tables effectively",
+            "Solve simple multiplication word problems"
+        ],
+        "practice_problems": [
+            "What is 7 × 8?",
+            "Calculate 12 × 6",
+            "If you have 5 bags with 4 apples each, how many apples do you have?",
+            "Find the product of 9 and 11"
+        ],
+        "prerequisites": [],
+        "next_concepts": [
+            "concept_multiplication_large_numbers",
+            "concept_divisibility_rules"
+        ],
+        "tags": ["multiplication", "basic_operations", "number_sense"],
+        "metadata": {
+            "common_mistakes": ["confusing multiplication with addition", "forgetting multiplication facts"],
+            "visual_aids": ["arrays", "number lines", "multiplication tables"]
+        }
+    }
+    concepts.append(multiplication_basic)
+    
+    # Divisibility rules
+    divisibility_rules = {
+        "concept_id": generate_concept_id("concept", "divisibility_rules"),
+        "name": "Divisibility Rules",
+        "grade_level": 6,
+        "description": "Learning rules to determine if one number is divisible by another",
+        "difficulty": 2,
+        "estimated_hours": 2.5,
+        "concept_type": "number_theory",
+        "learning_objectives": [
+            "Understand divisibility rules for 2, 3, 5, 6, 9, and 10",
+            "Apply divisibility rules to determine factors",
+            "Use divisibility rules to simplify problems",
+            "Recognize patterns in divisibility"
+        ],
+        "practice_problems": [
+            "Is 246 divisible by 3?",
+            "Which numbers from 1-20 are divisible by both 2 and 3?",
+            "Find all factors of 36 using divisibility rules",
+            "Is 1,245 divisible by 5?"
+        ],
+        "prerequisites": [
+            "concept_multiplication_basic"
+        ],
+        "next_concepts": [
+            "concept_lcm_basic",
+            "concept_gcf_basic"
+        ],
+        "tags": ["divisibility", "number_theory", "factors"],
+        "metadata": {
+            "rules": {
+                "2": "Last digit is even (0, 2, 4, 6, 8)",
+                "3": "Sum of digits is divisible by 3",
+                "5": "Last digit is 0 or 5",
+                "6": "Divisible by both 2 and 3",
+                "9": "Sum of digits is divisible by 9",
+                "10": "Last digit is 0"
+            }
+        }
+    }
+    concepts.append(divisibility_rules)
+    
+    # LCM Basic
+    lcm_basic = {
+        "concept_id": generate_concept_id("concept", "lcm_basic"),
+        "name": "Least Common Multiple (Basic)",
+        "grade_level": 6,
+        "description": "Finding the smallest common multiple of two or more numbers",
+        "difficulty": 2,
+        "estimated_hours": 3.0,
+        "concept_type": "number_theory",
+        "learning_objectives": [
+            "Understand what LCM means and why it's useful",
+            "Find LCM using listing method",
+            "Find LCM using prime factorization",
+            "Apply LCM to solve simple word problems"
+        ],
+        "practice_problems": [
+            "Find the LCM of 6 and 8",
+            "Find the LCM of 12 and 18",
+            "A bus comes every 15 minutes, another every 20 minutes. When will they arrive together?",
+            "Find the LCM of 4, 6, and 9"
+        ],
+        "prerequisites": [
+            "concept_multiplication_basic",
+            "concept_divisibility_rules"
+        ],
+        "next_concepts": [
+            "concept_lcm_advanced",
+            "concept_fraction_addition"
+        ],
+        "tags": ["lcm", "number_theory", "multiples"],
+        "metadata": {
+            "methods": ["listing_multiples", "prime_factorization"],
+            "applications": ["scheduling", "fractions", "word_problems"]
+        }
+    }
+    concepts.append(lcm_basic)
+    
+    # LCM Advanced
+    lcm_advanced = {
+        "concept_id": generate_concept_id("concept", "lcm_advanced"),
+        "name": "Least Common Multiple (Advanced)",
+        "grade_level": 6,
+        "description": "Advanced LCM techniques and applications to complex problems",
+        "difficulty": 3,
+        "estimated_hours": 2.5,
+        "concept_type": "number_theory",
+        "learning_objectives": [
+            "Find LCM of three or more numbers efficiently",
+            "Use LCM to solve complex word problems",
+            "Understand the relationship between LCM and GCF",
+            "Apply LCM in real-world scenarios"
+        ],
+        "practice_problems": [
+            "Find the LCM of 8, 12, and 20",
+            "Three runners start together. Runner A completes a lap in 2 minutes, B in 3 minutes, and C in 4 minutes. When will they all be at the starting line together?",
+            "Find the smallest number that leaves remainder 1 when divided by 3, 4, and 5",
+            "Find LCM of 15, 25, and 35"
+        ],
+        "prerequisites": ["concept_lcm_basic"],
+        "next_concepts": ["concept_fraction_operations", "concept_algebraic_expressions"],
+        "tags": ["lcm", "advanced", "word_problems", "real_world"],
+        "metadata": {
+            "advanced_techniques": ["prime_factorization", "efficient_algorithms"],
+            "real_world_applications": ["scheduling", "engineering", "science"]
+        }
+    }
+    concepts.append(lcm_advanced)
+    
+    # GCF Basic
+    gcf_basic = {
+        "concept_id": generate_concept_id("concept", "gcf_basic"),
+        "name": "Greatest Common Factor (Basic)",
+        "grade_level": 6,
+        "description": "Finding the largest common factor of two or more numbers",
+        "difficulty": 2,
+        "estimated_hours": 2.5,
+        "concept_type": "number_theory",
+        "learning_objectives": [
+            "Understand what GCF means and how to find it",
+            "Find GCF using listing method",
+            "Find GCF using prime factorization",
+            "Use GCF to simplify fractions"
+        ],
+        "practice_problems": [
+            "Find the GCF of 12 and 18",
+            "Find the GCF of 24 and 36",
+            "What is the largest number that divides both 45 and 60?",
+            "Find the GCF of 16, 24, and 32"
+        ],
+        "prerequisites": ["concept_divisibility_rules"],
+        "next_concepts": ["concept_lcm_basic", "concept_fraction_simplification"],
+        "tags": ["gcf", "number_theory", "factors"],
+        "metadata": {
+            "methods": ["listing_factors", "prime_factorization"],
+            "applications": ["fraction_simplification", "problem_solving"]
+        }
+    }
+    concepts.append(gcf_basic)
+    
+    return concepts
+
+
+def create_fraction_concepts() -> List[Dict[str, Any]]:
+    """Create fraction-related concepts."""
+    concepts = []
+    
+    # Fraction Basics
+    fraction_basics = {
+        "concept_id": generate_concept_id("concept", "fraction_basics"),
+        "name": "Fraction Basics",
+        "grade_level": 6,
+        "description": "Understanding fractions, equivalent fractions, and basic fraction operations",
+        "difficulty": 2,
+        "estimated_hours": 3.0,
+        "concept_type": "fractions",
+        "learning_objectives": [
+            "Understand what fractions represent",
+            "Identify equivalent fractions",
+            "Simplify fractions to lowest terms",
+            "Compare fractions using common denominators"
+        ],
+        "practice_problems": [
+            "Simplify 8/12 to lowest terms",
+            "Find three fractions equivalent to 2/3",
+            "Compare 3/4 and 5/6",
+            "Which is larger: 2/5 or 3/8?"
+        ],
+        "prerequisites": ["concept_multiplication_basic", "concept_divisibility_rules"],
+        "next_concepts": ["concept_fraction_addition", "concept_fraction_multiplication"],
+        "tags": ["fractions", "basics", "equivalent_fractions"],
+        "metadata": {
+            "visual_representations": ["pie_charts", "number_lines", "area_models"],
+            "common_mistakes": ["adding_numerators_and_denominators", "forgetting_to_simplify"]
+        }
+    }
+    concepts.append(fraction_basics)
+    
+    # Fraction Addition
+    fraction_addition = {
+        "concept_id": generate_concept_id("concept", "fraction_addition"),
+        "name": "Fraction Addition and Subtraction",
+        "grade_level": 6,
+        "description": "Adding and subtracting fractions with like and unlike denominators",
+        "difficulty": 3,
+        "estimated_hours": 3.5,
+        "concept_type": "fractions",
+        "learning_objectives": [
+            "Add fractions with like denominators",
+            "Find common denominators for unlike fractions",
+            "Add and subtract fractions with unlike denominators",
+            "Simplify results to lowest terms"
+        ],
+        "practice_problems": [
+            "Add 1/4 + 2/4",
+            "Calculate 2/3 + 1/6",
+            "Find 5/8 - 1/4",
+            "Solve 3/5 + 2/3 - 1/15"
+        ],
+        "prerequisites": ["concept_fraction_basics", "concept_lcm_basic"],
+        "next_concepts": ["concept_fraction_multiplication", "concept_mixed_numbers"],
+        "tags": ["fractions", "addition", "subtraction", "common_denominators"],
+        "metadata": {
+            "methods": ["common_denominators", "lcm_method"],
+            "applications": ["measurement", "cooking", "construction"]
+        }
+    }
+    concepts.append(fraction_addition)
+    
+    # Fraction Multiplication
+    fraction_multiplication = {
+        "concept_id": generate_concept_id("concept", "fraction_multiplication"),
+        "name": "Fraction Multiplication and Division",
+        "grade_level": 6,
+        "description": "Multiplying and dividing fractions, including mixed numbers",
+        "difficulty": 3,
+        "estimated_hours": 3.0,
+        "concept_type": "fractions",
+        "learning_objectives": [
+            "Multiply fractions by fractions",
+            "Multiply fractions by whole numbers",
+            "Divide fractions by fractions",
+            "Convert mixed numbers to improper fractions"
+        ],
+        "practice_problems": [
+            "Multiply 2/3 × 3/4",
+            "Calculate 5 × 2/3",
+            "Divide 3/4 ÷ 1/2",
+            "Find 2 1/3 × 1 1/2"
+        ],
+        "prerequisites": ["concept_fraction_addition"],
+        "next_concepts": ["concept_decimal_operations", "concept_percentages"],
+        "tags": ["fractions", "multiplication", "division", "mixed_numbers"],
+        "metadata": {
+            "methods": ["multiply_numerators_and_denominators", "keep_change_flip"],
+            "applications": ["scaling", "ratios", "proportions"]
+        }
+    }
+    concepts.append(fraction_multiplication)
+    
+    return concepts
+
+
+def create_decimal_concepts() -> List[Dict[str, Any]]:
+    """Create decimal-related concepts."""
+    concepts = []
+    
+    # Decimal Basics
+    decimal_basics = {
+        "concept_id": generate_concept_id("concept", "decimal_basics"),
+        "name": "Decimal Basics",
+        "grade_level": 6,
+        "description": "Understanding decimal place value and basic decimal operations",
+        "difficulty": 2,
+        "estimated_hours": 2.5,
+        "concept_type": "decimals",
+        "learning_objectives": [
+            "Understand decimal place value",
+            "Read and write decimal numbers",
+            "Compare decimal numbers",
+            "Convert between fractions and decimals"
+        ],
+        "practice_problems": [
+            "Write 0.75 as a fraction",
+            "Convert 3/8 to a decimal",
+            "Compare 0.6 and 0.58",
+            "Order 0.3, 0.25, 0.35 from least to greatest"
+        ],
+        "prerequisites": ["fraction_basics"],
+        "next_concepts": ["decimal_operations", "percentages"],
+        "tags": ["decimals", "place_value", "conversions"],
+        "metadata": {
+            "place_value": ["tenths", "hundredths", "thousandths"],
+            "visual_aids": ["base_ten_blocks", "number_lines"]
+        }
+    }
+    concepts.append(decimal_basics)
+    
+    # Decimal Operations
+    decimal_operations = {
+        "concept_id": generate_concept_id("concept", "decimal_operations"),
+        "name": "Decimal Operations",
+        "grade_level": 6,
+        "description": "Adding, subtracting, multiplying, and dividing decimal numbers",
+        "difficulty": 3,
+        "estimated_hours": 3.5,
+        "concept_type": "decimals",
+        "learning_objectives": [
+            "Add and subtract decimal numbers",
+            "Multiply decimal numbers",
+            "Divide decimal numbers",
+            "Estimate decimal calculations"
+        ],
+        "practice_problems": [
+            "Add 3.45 + 2.78",
+            "Calculate 5.6 × 2.3",
+            "Find 12.6 ÷ 3",
+            "Estimate 4.89 × 7.12"
+        ],
+        "prerequisites": ["decimal_basics", "fraction_multiplication"],
+        "next_concepts": ["percentages", "algebraic_expressions"],
+        "tags": ["decimals", "operations", "estimation"],
+        "metadata": {
+            "methods": ["line_up_decimals", "count_decimal_places"],
+            "applications": ["money", "measurement", "science"]
+        }
+    }
+    concepts.append(decimal_operations)
+    
+    return concepts
+
+
+def create_algebra_concepts() -> List[Dict[str, Any]]:
+    """Create basic algebra concepts."""
+    concepts = []
+    
+    # Algebraic Expressions
+    algebraic_expressions = {
+        "concept_id": generate_concept_id("concept", "algebraic_expressions"),
+        "name": "Algebraic Expressions",
+        "grade_level": 6,
+        "description": "Understanding variables, expressions, and basic algebraic concepts",
+        "difficulty": 3,
+        "estimated_hours": 3.0,
+        "concept_type": "algebra",
+        "learning_objectives": [
+            "Understand what variables represent",
+            "Evaluate simple algebraic expressions",
+            "Combine like terms",
+            "Translate word problems to expressions"
+        ],
+        "practice_problems": [
+            "Evaluate 3x + 2 when x = 4",
+            "Simplify 2x + 3x + 5",
+            "Write an expression for '5 more than twice a number'",
+            "Find the value of 2a + b when a = 3 and b = 7"
+        ],
+        "prerequisites": ["decimal_operations", "fraction_operations"],
+        "next_concepts": ["simple_equations", "patterns"],
+        "tags": ["algebra", "variables", "expressions"],
+        "metadata": {
+            "concepts": ["variables", "coefficients", "like_terms"],
+            "applications": ["word_problems", "patterns", "real_world"]
+        }
+    }
+    concepts.append(algebraic_expressions)
+    
+    # Simple Equations
+    simple_equations = {
+        "concept_id": generate_concept_id("concept", "simple_equations"),
+        "name": "Simple Equations",
+        "grade_level": 6,
+        "description": "Solving one-step and two-step equations with whole numbers",
+        "difficulty": 3,
+        "estimated_hours": 3.5,
+        "concept_type": "algebra",
+        "learning_objectives": [
+            "Solve one-step equations",
+            "Solve two-step equations",
+            "Check solutions to equations",
+            "Apply equations to word problems"
+        ],
+        "practice_problems": [
+            "Solve x + 5 = 12",
+            "Find the value of x in 3x = 15",
+            "Solve 2x + 3 = 11",
+            "If 3 times a number plus 4 equals 19, what is the number?"
+        ],
+        "prerequisites": ["algebraic_expressions"],
+        "next_concepts": ["inequalities", "patterns"],
+        "tags": ["algebra", "equations", "solving"],
+        "metadata": {
+            "methods": ["inverse_operations", "balance_method"],
+            "applications": ["word_problems", "real_world_scenarios"]
+        }
+    }
+    concepts.append(simple_equations)
+    
+    return concepts
+
+
+def create_geometry_concepts() -> List[Dict[str, Any]]:
+    """Create basic geometry concepts."""
+    concepts = []
+    
+    # Area and Perimeter
+    area_perimeter = {
+        "concept_id": generate_concept_id("concept", "area_perimeter"),
+        "name": "Area and Perimeter",
+        "grade_level": 6,
+        "description": "Calculating area and perimeter of basic geometric shapes",
+        "difficulty": 2,
+        "estimated_hours": 3.0,
+        "concept_type": "geometry",
+        "learning_objectives": [
+            "Calculate perimeter of rectangles and squares",
+            "Find area of rectangles and squares",
+            "Understand the difference between area and perimeter",
+            "Apply formulas to solve problems"
+        ],
+        "practice_problems": [
+            "Find the perimeter of a rectangle with length 8 and width 5",
+            "Calculate the area of a square with side length 6",
+            "If a rectangle has area 24 and length 6, what is its width?",
+            "Find the perimeter of a square with area 25"
+        ],
+        "prerequisites": ["multiplication_basic"],
+        "next_concepts": ["volume", "other_shapes"],
+        "tags": ["geometry", "area", "perimeter", "measurement"],
+        "metadata": {
+            "formulas": {
+                "rectangle_perimeter": "2(l + w)",
+                "rectangle_area": "l × w",
+                "square_perimeter": "4s",
+                "square_area": "s²"
+            }
+        }
+    }
+    concepts.append(area_perimeter)
+    
+    # Volume
+    volume = {
+        "concept_id": generate_concept_id("concept", "volume"),
+        "name": "Volume of Rectangular Prisms",
+        "grade_level": 6,
+        "description": "Understanding and calculating volume of three-dimensional shapes",
+        "difficulty": 3,
+        "estimated_hours": 2.5,
+        "concept_type": "geometry",
+        "learning_objectives": [
+            "Understand what volume represents",
+            "Calculate volume of rectangular prisms",
+            "Find missing dimensions given volume",
+            "Apply volume to real-world problems"
+        ],
+        "practice_problems": [
+            "Find the volume of a box with dimensions 3 × 4 × 5",
+            "If a cube has volume 64, what is its side length?",
+            "Calculate the volume of a rectangular prism with area 20 and height 3",
+            "A tank holds 120 cubic units. If it's 6 units long and 4 units wide, how tall is it?"
+        ],
+        "prerequisites": ["area_perimeter"],
+        "next_concepts": ["surface_area", "other_3d_shapes"],
+        "tags": ["geometry", "volume", "3d_shapes", "measurement"],
+        "metadata": {
+            "formula": "V = l × w × h",
+            "units": "cubic units",
+            "applications": ["packaging", "construction", "science"]
+        }
+    }
+    concepts.append(volume)
+    
+    return concepts
+
+
+def create_data_concepts() -> List[Dict[str, Any]]:
+    """Create data and probability concepts."""
+    concepts = []
+    
+    # Basic Statistics
+    basic_statistics = {
+        "concept_id": generate_concept_id("concept", "basic_statistics"),
+        "name": "Basic Statistics",
+        "grade_level": 6,
+        "description": "Understanding mean, median, mode, and basic data representation",
+        "difficulty": 2,
+        "estimated_hours": 2.5,
+        "concept_type": "statistics",
+        "learning_objectives": [
+            "Calculate mean, median, and mode",
+            "Understand when to use each measure",
+            "Interpret simple data sets",
+            "Create basic charts and graphs"
+        ],
+        "practice_problems": [
+            "Find the mean of 5, 8, 12, 15, 20",
+            "What is the median of 3, 7, 9, 12, 15, 18?",
+            "Find the mode of 2, 4, 4, 6, 8, 4, 10",
+            "Create a bar graph for the data: A=5, B=3, C=7, D=2"
+        ],
+        "prerequisites": ["multiplication_basic", "decimal_basics"],
+        "next_concepts": ["probability", "data_analysis"],
+        "tags": ["statistics", "data", "mean", "median", "mode"],
+        "metadata": {
+            "measures": ["mean", "median", "mode", "range"],
+            "visualizations": ["bar_graphs", "line_plots", "pictographs"]
+        }
+    }
+    concepts.append(basic_statistics)
+    
+    # Simple Probability
+    simple_probability = {
+        "concept_id": generate_concept_id("concept", "simple_probability"),
+        "name": "Simple Probability",
+        "grade_level": 6,
+        "description": "Understanding basic probability concepts and calculations",
+        "difficulty": 2,
+        "estimated_hours": 2.0,
+        "concept_type": "probability",
+        "learning_objectives": [
+            "Understand what probability means",
+            "Calculate simple probabilities",
+            "Express probabilities as fractions, decimals, and percentages",
+            "Understand the difference between likely and unlikely events"
+        ],
+        "practice_problems": [
+            "What is the probability of rolling a 3 on a fair die?",
+            "If you pick a card from a deck, what's the probability it's a heart?",
+            "A bag has 3 red marbles and 7 blue marbles. What's the probability of picking red?",
+            "Express 0.25 as a probability in fraction form"
+        ],
+        "prerequisites": ["fraction_basics", "decimal_basics"],
+        "next_concepts": ["compound_probability", "data_analysis"],
+        "tags": ["probability", "chance", "fractions", "decimals"],
+        "metadata": {
+            "probability_range": "0 to 1",
+            "expressions": ["fractions", "decimals", "percentages"],
+            "applications": ["games", "weather", "sports"]
+        }
+    }
+    concepts.append(simple_probability)
+    
+    return concepts
+
+
+def generate_knowledge_graph() -> Dict[str, Any]:
+    """Generate the complete knowledge graph."""
+    
+    # Generate all concept categories
+    lcm_concepts = create_lcm_concepts()
+    fraction_concepts = create_fraction_concepts()
+    decimal_concepts = create_decimal_concepts()
+    algebra_concepts = create_algebra_concepts()
+    geometry_concepts = create_geometry_concepts()
+    data_concepts = create_data_concepts()
+    
+    # Combine all concepts
+    all_concepts = (lcm_concepts + fraction_concepts + decimal_concepts + 
+                   algebra_concepts + geometry_concepts + data_concepts)
+    
+    # Create the knowledge graph structure
+    knowledge_graph = {
+        "metadata": {
+            "generated_at": datetime.now().isoformat(),
+            "version": "1.0",
+            "grade_level": 6,
+            "total_concepts": len(all_concepts),
+            "description": "Grade 6 Math Knowledge Graph focusing on LCM and related concepts"
+        },
+        "concepts": all_concepts,
+        "learning_paths": [
+            {
+                "path_id": "lcm_foundation_path",
+                "name": "LCM Foundation Path",
+                "description": "Path from basic multiplication to advanced LCM applications",
+                "concepts": [
+                    "concept_multiplication_basic",
+                    "concept_divisibility_rules", 
+                    "concept_lcm_basic",
+                    "concept_lcm_advanced"
+                ],
+                "estimated_time": 10.0,
+                "difficulty_progression": [1, 2, 2, 3]
+            },
+            {
+                "path_id": "fraction_mastery_path",
+                "name": "Fraction Mastery Path",
+                "description": "Complete path through fraction concepts",
+                "concepts": [
+                    "concept_fraction_basics",
+                    "concept_fraction_addition",
+                    "concept_fraction_multiplication"
+                ],
+                "estimated_time": 9.5,
+                "difficulty_progression": [2, 3, 3]
+            }
+        ]
+    }
+    
+    return knowledge_graph
+
+
+def main():
+    """Main function to generate and save the knowledge graph."""
+    print("Generating Grade 6 Math Knowledge Graph...")
+    
+    try:
+        # Generate the knowledge graph
+        knowledge_graph = generate_knowledge_graph()
+        
+        # Save to file
+        output_file = "data/knowledge_graph.json"
+        with open(output_file, 'w') as f:
+            json.dump(knowledge_graph, f, indent=2)
+        
+        print(f"✅ Knowledge graph generated successfully!")
+        print(f"📊 Total concepts: {knowledge_graph['metadata']['total_concepts']}")
+        print(f"📁 Saved to: {output_file}")
+        
+        # Print concept summary
+        print("\n📚 Concept Categories:")
+        categories = {}
+        for concept in knowledge_graph['concepts']:
+            cat = concept['concept_type']
+            categories[cat] = categories.get(cat, 0) + 1
+        
+        for category, count in sorted(categories.items()):
+            print(f"  • {category.replace('_', ' ').title()}: {count} concepts")
+        
+        print(f"\n🎯 Learning Paths: {len(knowledge_graph['learning_paths'])}")
+        for path in knowledge_graph['learning_paths']:
+            print(f"  • {path['name']}: {len(path['concepts'])} concepts, {path['estimated_time']} hours")
+        
+    except Exception as e:
+        print(f"❌ Error generating knowledge graph: {e}")
+        raise
+
+
+if __name__ == "__main__":
+    main()
